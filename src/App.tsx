@@ -1,6 +1,9 @@
 import React from 'react';
-import { Bot, ChevronDown, Rocket } from 'lucide-react';
-import FAQSection from './components/FAQSection'; // Import the new FAQ component
+import { ChevronDown, Rocket } from 'lucide-react';
+import FAQSection from './components/FAQSection';
+import ChatDemo from './components/ChatDemo';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 // Defines the core glassmorphism container style
 const GlassPanel: React.FC<{ children: React.ReactNode, className?: string }> = ({ children, className = '' }) => (
@@ -32,15 +35,10 @@ function App() {
           </p>
         </header>
 
-        {/* --- Main Glass Panel (Placeholder for Chat Interface) --- */}
-        <GlassPanel id="demo" className="w-full max-w-4xl relative mb-12">
-          <div className="flex flex-col items-center justify-center h-64">
-            <Bot className="w-16 h-16 text-teal-400 mb-4 animate-pulse" />
-            <p className="text-slate-300 text-lg">
-              The RehabInfo Assistant Chat Interface will be embedded here soon.
-            </p>
-          </div>
-        </GlassPanel>
+        {/* --- Chat Demo Interface --- */}
+        <div id="demo" className="w-full max-w-5xl mb-12">
+          <ChatDemo />
+        </div>
 
         {/* --- Call-to-Action Buttons --- */}
         <div className="flex space-x-4 mb-6">
@@ -72,7 +70,11 @@ function App() {
       {/* --- FAQ/About Section Component --- */}
       <FAQSection />
 
-      {/* Footer / Subsequent Sections will follow here */}
+      {/* --- Contact Form --- */}
+      <ContactForm />
+
+      {/* --- Footer --- */}
+      <Footer />
 
     </div>
   );
