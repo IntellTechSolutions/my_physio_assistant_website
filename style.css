@@ -1,0 +1,464 @@
+@import "tailwindcss";
+
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #e9ecef;
+}
+
+h1, h2, h3, h4 {
+    color: #212529;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #007bff; /* Primary brand color */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.6)), url('https://via.placeholder.com/1500x800') no-repeat center center/cover; /* Placeholder image */
+    color: #ffffff;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.hero-content .subheadline {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    margin-bottom: 30px;
+}
+
+.primary-button, .secondary-button {
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    background-color: #28a745; /* Success green */
+    color: #ffffff;
+    border: 2px solid #28a745;
+}
+
+.primary-button:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.secondary-button:hover {
+    background-color: #ffffff;
+    color: #007bff;
+}
+
+.hero-description {
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+/* Product Overview, Features, How It Works, Clinical Areas, Safety & Compliance, Technical Specs, Business Model, Roadmap, About, USP, Metrics, Taglines */
+.feature-category, .steps, .example-queries, .compliance-info, .safety-features, .tech-stack, .performance-metrics, .target-market, .revenue-model, .team-member, .faq-category, .cta-block {
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-category:last-child, .cta-block:last-child {
+    margin-bottom: 0;
+}
+
+.feature-category ul li, .faq-category ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.feature-category ul li::before {
+    content: ''; /* Remove default list style */
+    margin-right: 10px;
+}
+
+.feature-category ul li p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+}
+
+.step {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.step h3 {
+    color: #007bff;
+}
+
+.example-queries p {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.areas-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.areas-list ul li {
+    background-color: #e2f0ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #0056b3;
+}
+
+.compliance-info ul li, .safety-features ul li, .tech-stack ul li, .performance-metrics ul li, .target-market ul li, .revenue-model ul li, #roadmap ul li, #usp ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.compliance-info ul li p, .safety-features ul li p, .tech-stack ul li p, .target-market ul li p, .revenue-model ul li p {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.qa-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.qa-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.qa-item h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.cta-block {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-block h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.cta-block p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .primary-button, .cta-buttons .secondary-button {
+    margin: 0 15px;
+    padding: 12px 30px;
+    font-size: 1em;
+}
+
+.testimonial {
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial p:last-child {
+    font-style: normal;
+    font-weight: 600;
+    text-align: right;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 60px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #ced4da;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-info, .social-media, .copyright {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #495057;
+    padding-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        display: none; /* Hide nav links on smaller screens, could add a hamburger menu */
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .logo, nav .cta-button {
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        padding: 100px 20px;
+        min-height: 60vh;
+    }
+
+    .hero-content .subheadline {
+        font-size: 1.2em;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .primary-button, .secondary-button {
+        margin: 0;
+        width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .feature-category, .compliance-info, .safety-features, .tech-stack, .performance-metrics, .target-market, .revenue-model, .team-member, .faq-category, .cta-block {
+        padding: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .hero-section {
+        padding: 80px 15px;
+    }
+
+    .hero-content .subheadline {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 20px;
+        font-size: 0.9em;
+    }
+}

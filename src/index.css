@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * Apply the core background gradient to the body 
+ * Background: bg-gradient-to-br from-slate-800 via-blue-900 to-slate-800 [cite: 10]
+ */
+body {
+  @apply bg-gradient-to-br from-slate-800 via-blue-900 to-slate-800 min-h-screen text-white font-sans;
+}
