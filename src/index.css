@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* * Apply the core background gradient to the body 
  * Background: bg-gradient-to-br from-slate-800 via-blue-900 to-slate-800 [cite: 10]
