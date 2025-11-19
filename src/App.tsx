@@ -1,23 +1,8 @@
-import React from 'react';
 import { ChevronDown, Rocket } from 'lucide-react';
 import FAQSection from './components/FAQSection';
 import ChatDemo from './components/ChatDemo';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-
-// Soft glassmorphism container style
-const GlassPanel: React.FC<{ children: React.ReactNode, className?: string }> = ({ children, className = '' }) => (
-  <div
-    className={`p-6 md:p-10 rounded-2xl border backdrop-blur-xl ${className}`}
-    style={{
-      background: 'linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(240,246,255,0.55) 100%)',
-      borderColor: 'rgba(180,200,230,0.25)',
-      boxShadow: '0 8px 24px rgba(30,60,90,0.08)'
-    }}
-  >
-    {children}
-  </div>
-);
 
 function App() {
   const heroDescription = "MHRA-compliant • Evidence-based • Clinically verified • Available anytime";
