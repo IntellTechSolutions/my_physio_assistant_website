@@ -86,31 +86,36 @@ const ChatDemo: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-[600px] flex flex-col bg-slate-900/50 rounded-3xl border border-white/10 backdrop-blur-xl overflow-hidden">
+    <div
+      className="w-full h-[600px] flex flex-col rounded-3xl border border-white/60 backdrop-blur-xl bg-white/90 overflow-hidden shadow-lg"
+      style={{
+        boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.8) inset'
+      }}
+    >
       {/* Chat Header */}
-      <div className="px-6 py-4 border-b border-white/10 bg-white/5">
-        <h3 className="text-lg font-semibold text-white">RehabInfo Assistant Demo</h3>
-        <p className="text-xs text-slate-400 mt-1">
+      <div className="px-6 py-4 border-b border-sky-100 bg-gradient-to-r from-sky-50 to-blue-50">
+        <h3 className="text-lg font-semibold text-slate-800">RehabInfo Assistant Demo</h3>
+        <p className="text-xs text-slate-500 mt-1">
           This is a demonstration. Real product coming soon.
         </p>
       </div>
 
       {/* Messages Container */}
-      <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+      <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4 bg-gradient-to-b from-white/50 to-sky-50/30">
         {messages.map((msg, idx) => (
           <ChatMessage key={idx} {...msg} />
         ))}
 
         {isTyping && (
           <div className="flex gap-3 mb-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center">
-              <div className="w-5 h-5 text-teal-400">💬</div>
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center">
+              <div className="w-5 h-5 text-teal-600">💬</div>
             </div>
-            <div className="bg-white/10 rounded-2xl px-4 py-3 border border-white/10">
+            <div className="bg-white/80 rounded-2xl px-4 py-3 border border-sky-100 shadow-sm">
               <div className="flex gap-1">
-                <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+                <div className="w-2 h-2 bg-sky-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+                <div className="w-2 h-2 bg-sky-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+                <div className="w-2 h-2 bg-sky-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
               </div>
             </div>
           </div>
@@ -120,7 +125,7 @@ const ChatDemo: React.FC = () => {
       </div>
 
       {/* Input Area */}
-      <div className="px-6 py-4 border-t border-white/10 bg-white/5">
+      <div className="px-6 py-4 border-t border-sky-100 bg-gradient-to-r from-sky-50 to-blue-50">
         <ChatInput onSendMessage={handleSendMessage} disabled={isTyping} />
       </div>
     </div>

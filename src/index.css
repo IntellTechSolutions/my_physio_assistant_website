@@ -1,8 +1,33 @@
 @import "tailwindcss";
 
-/* * Apply the core background gradient to the body 
- * Background: bg-gradient-to-br from-slate-800 via-blue-900 to-slate-800 [cite: 10]
- */
+/* Light glassmorphism theme background */
 body {
-  @apply bg-gradient-to-br from-slate-800 via-blue-900 to-slate-800 min-h-screen text-white font-sans;
+  @apply bg-gradient-to-br from-sky-50 via-blue-50 to-white min-h-screen text-slate-800 font-sans;
+}
+
+/* Decorative glowing orbs for light theme */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(147, 197, 253, 0.3) 0%, transparent 70%);
+}
+
+body::after {
+  bottom: -15%;
+  left: -10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(94, 234, 212, 0.25) 0%, rgba(165, 243, 252, 0.2) 50%, transparent 70%);
 }
