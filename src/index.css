@@ -1,33 +1,7 @@
 @import "tailwindcss";
 
-/* Light glassmorphism theme background */
+/* Soft light glassmorphism theme background */
 body {
-  @apply bg-gradient-to-br from-sky-50 via-blue-50 to-white min-h-screen text-slate-800 font-sans;
-}
-
-/* Decorative glowing orbs for light theme */
-body::before,
-body::after {
-  content: '';
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(100px);
-  z-index: -1;
-  pointer-events: none;
-}
-
-body::before {
-  top: -10%;
-  right: -5%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(147, 197, 253, 0.3) 0%, transparent 70%);
-}
-
-body::after {
-  bottom: -15%;
-  left: -10%;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(circle, rgba(94, 234, 212, 0.25) 0%, rgba(165, 243, 252, 0.2) 50%, transparent 70%);
+  @apply min-h-screen text-slate-800 font-sans;
+  background: linear-gradient(to bottom right, #e6f0fa, #f2f7fb, #eef4fa);
 }

@@ -26,8 +26,13 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ role, content, sources, times
           className={`rounded-2xl px-4 py-3 ${
             isUser
               ? 'bg-teal-500 text-white shadow-md'
-              : 'bg-white/90 text-slate-700 border border-sky-100 shadow-sm'
+              : 'text-slate-700 border backdrop-blur-xl'
           }`}
+          style={!isUser ? {
+            background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(245,250,255,0.6) 100%)',
+            borderColor: 'rgba(180,200,230,0.25)',
+            boxShadow: '0 4px 12px rgba(30,60,90,0.06)'
+          } : undefined}
         >
           <p className="text-sm leading-relaxed">{content}</p>
 

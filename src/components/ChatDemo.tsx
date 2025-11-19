@@ -87,9 +87,11 @@ const ChatDemo: React.FC = () => {
 
   return (
     <div
-      className="w-full h-[600px] flex flex-col rounded-3xl border border-white/60 backdrop-blur-xl bg-white/90 overflow-hidden shadow-lg"
+      className="w-full h-[600px] flex flex-col rounded-3xl border backdrop-blur-xl overflow-hidden"
       style={{
-        boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.8) inset'
+        background: 'linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(240,246,255,0.55) 100%)',
+        borderColor: 'rgba(180,200,230,0.25)',
+        boxShadow: '0 8px 24px rgba(30,60,90,0.08)'
       }}
     >
       {/* Chat Header */}

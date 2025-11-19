@@ -50,9 +50,11 @@ const ContactForm: React.FC = () => {
   return (
     <section id="contact" className="w-full max-w-4xl mx-auto px-4 py-20">
       <div
-        className="p-8 md:p-12 rounded-3xl border border-white/60 shadow-lg backdrop-blur-xl bg-white/80"
+        className="p-8 md:p-12 rounded-3xl border backdrop-blur-xl"
         style={{
-          boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.8) inset'
+          background: 'linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(240,246,255,0.55) 100%)',
+          borderColor: 'rgba(180,200,230,0.25)',
+          boxShadow: '0 8px 24px rgba(30,60,90,0.08)'
         }}
       >
         <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-4 text-center">
