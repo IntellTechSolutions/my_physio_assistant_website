@@ -65,7 +65,7 @@ const FAQSection: React.FC = () => {
     {
       step: 2,
       title: "Intelligent Retrieval",
-      description: "Our system instantly scans hundreds of verified clinical resources alongside your specific session notes to identify the exact guidance relevant to your condition. This ensures that every search is strictly grounded in your personal data, delivering results that are tailored specifically to your case."
+      description: "Our system instantly scans hundreds of verified clinical resources alongside your specific session notes to identify the exact guidance relevant to your condition. This ensures that every search provides results that are tailored specifically to your case."
     },
     {
       step: 3,
