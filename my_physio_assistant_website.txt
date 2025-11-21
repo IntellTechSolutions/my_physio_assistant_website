@@ -42,13 +42,52 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
 
   ✓ React 19 + TypeScript application
   ✓ Soft glassmorphism design with animated orbs
+  ✓ Promotional banner: "Promotional Website for RehabInfo Assistant"
   ✓ Interactive chat demo
   ✓ Contact form (with Netlify Forms integration)
   ✓ FAQ section
+  ✓ Clinician login information section
+  ✓ Patient benefits section
+  ✓ Comprehensive Privacy Policy section (GDPR compliant)
   ✓ Responsive design
   ✓ All components with MHRA compliance messaging
 
-  Next Steps:
+  Recent Updates (November 2025):
+
+  ✓ Added promotional banner at top of hero section
+  ✓ Updated hero title to "RehabInfo Assistant"
+  ✓ Removed (999/111) emergency number references
+  ✓ Removed Resources section and social media icons from footer
+  ✓ Added "Can it be used by clinicians?" section
+  ✓ Added "Why provide patients with RehabInfo Assistant access?" section
+  ✓ Updated footer copyright to "Intelligent Technology Solutions Limited (UK)"
+  ✓ Added "Built by clinicians for patients and clinicians" message
+  ✓ Created comprehensive Privacy Policy component with 7 sections:
+    - Who We Are (Company registration details)
+    - Personal Data Collection (GDPR Minimization)
+    - Lawful Basis for Processing
+    - Data Sharing and Transfer
+    - Data Retention
+    - UK GDPR Rights
+    - Security Measures
+  ✓ Privacy Policy link now active and functional in footer
+
+  Project Structure:
+
+  src/
+  ├── components/
+  │   ├── ChatDemo.tsx          # Interactive chat demonstration
+  │   ├── ChatInput.tsx          # Chat input component
+  │   ├── ChatMessage.tsx        # Chat message display
+  │   ├── ContactForm.tsx        # Contact form (Netlify Forms)
+  │   ├── FAQSection.tsx         # FAQ and about section
+  │   ├── PrivacyPolicy.tsx      # Privacy Policy (GDPR compliant)
+  │   └── Footer.tsx             # Footer with links and disclaimer
+  ├── App.tsx                    # Main app component
+  ├── index.tsx                  # Entry point
+  └── index.css                  # Tailwind CSS styles
+
+  Deployment Management:
 
   1. View your live site: https://my-physio-assistant.com
   2. Manage your deployment:
@@ -59,14 +98,19 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
     - You'll see all contact form submissions there
   4. Automatic deployments:
     - Every git push to main branch will automatically deploy
-    - You can also connect this to your GitHub repo for deploy previews on pull requests
-  5. Custom domain (optional):
-    - Go to Site settings → Domain management
-    - Add your own domain if you have one
+    - Connected to GitHub repo for automatic deploy previews
 
   Build Details:
-  - Build time: ~5 seconds
-  - Assets: 3 files (222 KB JS, 30 KB CSS)
-  - Gzipped total: ~75 KB
+  - Build time: ~2-3 seconds
+  - Assets: 3 files (233 KB JS, 31 KB CSS)
+  - Gzipped total: ~78 KB
+  - Node version: 20
 
-  Your physiotherapy assistant website is now live and ready to show to potential clients! 
+  Company Information:
+
+  Intelligent Technology Solutions Limited (UK)
+  Registration: England and Wales, Companies House, Reg. No. 16455045
+  Address: Bartle House, 9 Oxford Court, Manchester, M2 3WQ
+  Operating: RehabInfo Assistant
+
+  Your physiotherapy assistant promotional website is now live with full Privacy Policy compliance! 
