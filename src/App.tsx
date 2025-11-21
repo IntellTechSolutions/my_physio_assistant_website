@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ChevronDown, Rocket } from 'lucide-react';
 import FAQSection from './components/FAQSection';
 import ChatDemo from './components/ChatDemo';
@@ -9,6 +10,14 @@ import Footer from './components/Footer';
 
 function App() {
   const heroDescription = "MHRA-compliant • Evidence-based • Clinically verified • Available anytime";
+
+  // Ensure page loads at the top
+  useEffect(() => {
+    // Only scroll to top on initial page load, not when navigating with hash links
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen relative overflow-hidden">
