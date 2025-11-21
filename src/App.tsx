@@ -3,6 +3,7 @@ import FAQSection from './components/FAQSection';
 import ChatDemo from './components/ChatDemo';
 import ContactForm from './components/ContactForm';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 import Footer from './components/Footer';
 
 function App() {
@@ -75,6 +76,9 @@ function App() {
 
         {/* --- Privacy Policy --- */}
         <PrivacyPolicy />
+
+        {/* --- Terms of Service --- */}
+        <TermsOfService />
 
         {/* --- Footer --- */}
         <Footer />
