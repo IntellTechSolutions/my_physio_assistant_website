@@ -141,6 +141,13 @@ const FAQSection: React.FC = () => {
             </GlassPanel>
           ))}
         </div>
+
+        {/* Tagline */}
+        <div className="text-center mt-8">
+          <p className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
+            RehabInfo Assistant - Your Rehabilitation Questions, Answered Instantly
+          </p>
+        </div>
       </div>
 
       {/* --- For Clinicians & Patients Section --- */}
@@ -152,7 +159,7 @@ const FAQSection: React.FC = () => {
               Can it be used by clinicians?
             </h3>
             <p className="text-slate-700 text-base leading-relaxed">
-              Yes, you can obtain a clinician login to access all the databases and you would be free to ask any question about Musculoskeletal medicine (e.g. pathophysiology, pharmacology, image interpretation etc.) that would allow you to manage your patient better.
+              Yes, you can obtain a clinician login to access the full, unrestricted database. You can query complex topics—like pathophysiology, pharmacology, or image interpretation—to support your clinical reasoning. This acts as an instant reference tool, saving you research time and helping you manage your patient better. It is also built by a clinician for clinicians.
             </p>
           </GlassPanel>
 
