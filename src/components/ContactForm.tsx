@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Send, Mail } from 'lucide-react';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -8,8 +8,6 @@ const ContactForm: React.FC = () => {
     organization: '',
     message: ''
   });
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -18,33 +16,19 @@ const ContactForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setStatus('idle');
 
-    try {
-      // Netlify Forms submission
-      const form = e.target as HTMLFormElement;
-      const formDataToSend = new FormData(form);
+    // Create mailto link with pre-filled information
+    const subject = encodeURIComponent(`RehabInfo Assistant Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Organization: ${formData.organization || 'N/A'}\n\n` +
+      `Message:\n${formData.message}`
+    );
 
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formDataToSend as any).toString()
-      });
-
-      if (response.ok) {
-        setStatus('success');
-        setFormData({ name: '', email: '', organization: '', message: '' });
-      } else {
-        setStatus('error');
-      }
-    } catch (error) {
-      setStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+    window.location.href = `mailto:info@intelltechsolutions.co.uk?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -66,15 +50,9 @@ const ContactForm: React.FC = () => {
         </p>
 
         <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
           onSubmit={handleSubmit}
           className="space-y-6"
         >
-          {/* Netlify form detection */}
-          <input type="hidden" name="form-name" value="contact" />
-
           {/* Name */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
@@ -145,36 +123,23 @@ const ContactForm: React.FC = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            disabled={isSubmitting}
-            className="w-full px-8 py-4 bg-teal-500 hover:bg-teal-400 disabled:bg-slate-300 text-white font-bold rounded-full transition duration-300 shadow-lg shadow-teal-500/30 flex items-center justify-center gap-2"
+            className="w-full px-8 py-4 bg-teal-500 hover:bg-teal-400 text-white font-bold rounded-full transition duration-300 shadow-lg shadow-teal-500/30 flex items-center justify-center gap-2"
           >
-            {isSubmitting ? (
-              <>
-                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                Sending...
-              </>
-            ) : (
-              <>
-                <Send className="w-5 h-5" />
-                Send Message
-              </>
-            )}
+            <Send className="w-5 h-5" />
+            Send Message
           </button>
 
-          {/* Status Messages */}
-          {status === 'success' && (
-            <div className="flex items-center gap-2 p-4 bg-teal-50 border border-teal-300 rounded-lg text-teal-700">
-              <CheckCircle className="w-5 h-5" />
-              <span>Thank you! We'll get back to you soon.</span>
-            </div>
-          )}
-
-          {status === 'error' && (
-            <div className="flex items-center gap-2 p-4 bg-red-50 border border-red-300 rounded-lg text-red-700">
-              <AlertCircle className="w-5 h-5" />
-              <span>Something went wrong. Please try again.</span>
-            </div>
-          )}
+          {/* Email Direct Link Alternative */}
+          <div className="text-center pt-4 border-t border-sky-100">
+            <p className="text-sm text-slate-500 mb-2">Or email us directly:</p>
+            <a
+              href="mailto:info@intelltechsolutions.co.uk"
+              className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-semibold transition"
+            >
+              <Mail className="w-4 h-4" />
+              info@intelltechsolutions.co.uk
+            </a>
+          </div>
         </form>
       </div>
     </section>
