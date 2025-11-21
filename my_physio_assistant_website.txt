@@ -71,6 +71,28 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
     - UK GDPR Rights
     - Security Measures
   ✓ Privacy Policy link now active and functional in footer
+  ✓ Created Terms of Service component with 6 sections:
+    - Acceptance of Terms
+    - Critical Health Disclaimer (Non-Medical Device Status)
+    - User Accounts and Access
+    - Content and Usage Restrictions
+    - Liability and Warranties
+    - Governing Law
+  ✓ Terms of Service link now active and functional in footer
+  ✓ Created MHRA Compliance Statement with 5 sections:
+    - Regulatory Status Declaration (Non-Medical Device)
+    - Intended Purpose and Exclusion from Medical Device Definition
+    - Safety and Risk Mitigation Controls
+    - Development and Future Vigilance
+    - Contact for Safety Concerns
+  ✓ MHRA Compliance link now active and functional in footer
+
+  Legal & Compliance Documents:
+
+  All three compliance documents are now live and accessible from the footer:
+  - Privacy Policy: Full GDPR/UK data protection compliance
+  - Terms of Service: Legal terms, disclaimers, and usage restrictions
+  - MHRA Compliance: Non-medical device status and safety controls
 
   Project Structure:
 
@@ -82,6 +104,8 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
   │   ├── ContactForm.tsx        # Contact form (Netlify Forms)
   │   ├── FAQSection.tsx         # FAQ and about section
   │   ├── PrivacyPolicy.tsx      # Privacy Policy (GDPR compliant)
+  │   ├── TermsOfService.tsx     # Terms of Service (Legal)
+  │   ├── MHRACompliance.tsx     # MHRA Compliance Statement
   │   └── Footer.tsx             # Footer with links and disclaimer
   ├── App.tsx                    # Main app component
   ├── index.tsx                  # Entry point
@@ -102,9 +126,10 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
 
   Build Details:
   - Build time: ~2-3 seconds
-  - Assets: 3 files (233 KB JS, 31 KB CSS)
-  - Gzipped total: ~78 KB
+  - Assets: 3 files (253 KB JS, 32 KB CSS)
+  - Gzipped total: ~82 KB
   - Node version: 20
+  - All compliance documents included in build
 
   Company Information:
 
