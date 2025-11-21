@@ -83,48 +83,48 @@ const FAQSection: React.FC = () => {
       {/* --- Product Overview & Safety Disclaimer Panel --- */}
       <GlassPanel className="mb-16">
         <div className="grid md:grid-cols-2 gap-10">
-          <div>
+          <div className="text-left">
             <h3 className="text-3xl font-bold text-teal-600 mb-4 flex items-center">
               <Shield className="w-8 h-8 mr-3" />
               What We Do (And Don't Do)
             </h3>
-            <p className="text-slate-700 text-lg mb-4">
+            <p className="text-slate-700 text-lg mb-4 text-left">
               RehabInfo Assistant is an intelligent chatbot that provides post-consultation
               rehabilitation information to physiotherapy patients. Built with Retrieval-Augmented
               Generation (RAG) technology, it delivers accurate, source-cited answers from verified
               clinical resources including NHS, NICE, BNF, CSP, and MHRA guidance.
             </p>
-            <p className="text-slate-700 text-lg">
+            <p className="text-slate-700 text-lg text-left">
               Unlike generic health chatbots, RehabInfo is designed specifically for the UK physiotherapy
               sector with strict MHRA compliance, ensuring <strong>educational support without crossing into medical advice or diagnosis</strong>.
             </p>
           </div>
 
-          <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
+          <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 text-left">
             <h4 className="text-xl font-bold text-red-600 mb-3 flex items-center">
               <AlertTriangle className="w-6 h-6 mr-2 text-red-500" />
               Safety & Compliance Disclaimer
             </h4>
-            <ul className="list-disc list-inside text-slate-700 space-y-2 text-md ml-4">
-              <li className="flex items-start">
+            <ul className="list-disc list-inside text-slate-700 space-y-2 text-md ml-4 text-left">
+              <li className="flex items-start text-left">
                 <span className="text-red-500 mr-2">✗</span> Does NOT diagnose medical conditions.
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start text-left">
                 <span className="text-red-500 mr-2">✗</span> Does NOT prescribe specific treatments.
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start text-left">
                 <span className="text-red-500 mr-2">✗</span> Does NOT replace professional medical advice.
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start text-left">
                 <span className="text-teal-500 mr-2">✓</span> Monitors for Urgency Keywords and immediately redirects to emergency contacts.
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start text-left">
                 <span className="text-teal-500 mr-2">✓</span> Provides educational information only.
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start text-left">
                 <span className="text-teal-500 mr-2">✓</span> Includes mandatory disclaimers on every response.
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start text-left">
                 <span className="text-teal-500 mr-2">✓</span> Full Audit Logging for clinical governance and MHRA compliance.
               </li>
             </ul>
