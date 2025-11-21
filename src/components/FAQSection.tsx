@@ -169,7 +169,7 @@ const FAQSection: React.FC = () => {
               Why provide patients with RehabInfo Assistant access?
             </h3>
             <p className="text-slate-700 text-base leading-relaxed">
-              Patients have questions after leaving your session. Some would not know about the rehab process if having insufficient information affecting rehab compliance. Others would keep waiting to ask questions till next appointment, and some ask you in the meantime. Anyway, this can affect rehab compliance or put a burden on you yourself.
+              Patients frequently have questions after their clinical sessions conclude. Insufficient information can lead to poor rehabilitation compliance, while delayed answers may cause anxiety or stall recovery progress. The RehabInfo Assistant bridges this gap by providing immediate, clinically verified answers, ensuring patients remain compliant with their recovery plans while reducing the administrative burden on clinical staff.
             </p>
           </GlassPanel>
         </div>

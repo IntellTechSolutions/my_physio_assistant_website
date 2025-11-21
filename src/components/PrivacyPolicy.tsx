@@ -59,7 +59,7 @@ const PrivacyPolicy: React.FC = () => {
                 <h4 className="text-lg font-semibold text-slate-800 mb-2">Authentication and Profile Data</h4>
                 <ul className="list-disc list-inside space-y-1 ml-4 text-base">
                   <li><strong>Authentication Data:</strong> User ID (UUID), Hashed Password, Username, Last Login. This secures your account and manages session access.</li>
-                  <li><strong>Clinical Profile Data:</strong> Condition Category (e.g., shoulder/knee), Most Recent Session Date, and Session Notes (manually uploaded by your physiotherapist). This data is used solely for personalized RAG retrieval and is protected by Supabase Row-Level Security (RLS).</li>
+                  <li><strong>Clinical Profile Data:</strong> Condition Category (e.g., shoulder/knee), Most Recent Session Date, and Clinical Session Data (uploaded by the treating clinician or Clinical Director). This data is used solely for personalized RAG retrieval and is protected by Supabase Row-Level Security (RLS).</li>
                 </ul>
               </div>
 
@@ -91,7 +91,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
             <p className="text-base mb-3">We process your data under the following lawful bases:</p>
             <ul className="list-disc list-inside space-y-2 ml-4 text-base">
-              <li><strong>Explicit Consent:</strong> For processing health-related special category data and the manual upload of your Session Notes by your physiotherapist (PJ).</li>
+              <li><strong>Explicit Consent:</strong> For processing health-related special category data and the manual processing of clinical data by Przemyslaw Jaczun (Director & Principal Clinician) or authorized clinical staff.</li>
               <li><strong>Legitimate Interests:</strong> For providing safe, factual rehabilitation information (public health interest) and monitoring system security.</li>
               <li><strong>Legal Obligation:</strong> For maintaining audit logs to meet UK MHRA safety and compliance requirements.</li>
             </ul>

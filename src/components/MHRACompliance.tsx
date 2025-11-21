@@ -119,7 +119,7 @@ const MHRACompliance: React.FC = () => {
                 <ul className="list-disc list-inside space-y-2 ml-4 text-base">
                   <li><strong>Audit Logging:</strong> All user interactions, bot responses, documents retrieved, and any triggered urgency flags are recorded in the logs/chatbot_audit.log and stored in the secure Supabase Audit_Log table.</li>
                   <li><strong>Urgency Detection:</strong> The system specifically monitors for high-risk keywords (e.g., severe pain, numbness, chest pain) and triggers a Tier 2 response, redirecting the user to emergency contacts (NHS 111, 999) before the LLM processes the query.</li>
-                  <li><strong>Clinical Verification:</strong> All documents in the RAG knowledge base (Phase 4.5) are sourced from Tier 1/2 sources (NHS, NICE, etc.) and require PJ's clinical verification and sign-off before ingestion.</li>
+                  <li><strong>Clinical Verification:</strong> All documents in the RAG knowledge base (Phase 4.5) are sourced from Tier 1/2 sources (NHS, NICE, etc.) and require explicit clinical verification and sign-off by the Clinical Safety Officer (Przemyslaw Jaczun) before ingestion.</li>
                 </ul>
               </div>
             </div>
