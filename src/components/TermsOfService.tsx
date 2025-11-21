@@ -69,7 +69,7 @@ const TermsOfService: React.FC = () => {
               <div>
                 <h4 className="text-lg font-semibold text-slate-800 mb-2">B. Personalised Clinical Advice</h4>
                 <p className="text-base mb-2">
-                  The information provided by the Service is general and factual, except where it directly retrieves your own personalized session notes manually uploaded by your assigned clinician.
+                  The information provided by the Service is general and factual, except where it directly retrieves your own personalised session notes manually uploaded by your assigned clinician.
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4 text-base">
                   <li><strong>Always Contact Your Clinician:</strong> You must always consult directly with your physiotherapist or another qualified healthcare professional for any concerns about your symptoms, diagnosis, or treatment.</li>
@@ -86,9 +86,9 @@ const TermsOfService: React.FC = () => {
               <h3 className="text-2xl font-bold text-sky-700">3. User Accounts and Access</h3>
             </div>
             <ul className="list-disc list-inside space-y-2 ml-4 text-base">
-              <li><strong>Eligibility:</strong> The Service is available to authorized users with a registered account, including patients under clinical management or subscribers to the pain management platform.</li>
+              <li><strong>Eligibility:</strong> The Service is available to authorised users with a registered account, including patients under clinical management or subscribers to the pain management platform.</li>
               <li><strong>Security:</strong> You are responsible for maintaining the confidentiality of your login credentials. You may only access data associated with your own profile due to strict Row-Level Security (RLS) protections.</li>
-              <li><strong>Session Context:</strong> You acknowledge that the personalized retrieval context may include clinical notes and profile data uploaded by Przemyslaw Jaczun or your specific healthcare provider.</li>
+              <li><strong>Session Context:</strong> You acknowledge that the personalised retrieval context may include clinical notes and profile data uploaded by Przemyslaw Jaczun or your specific healthcare provider.</li>
             </ul>
           </div>
 

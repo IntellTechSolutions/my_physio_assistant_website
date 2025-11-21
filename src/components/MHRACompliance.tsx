@@ -85,7 +85,7 @@ const MHRACompliance: React.FC = () => {
 
                 <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                   <p className="text-sm font-semibold text-blue-900">
-                    In Summary: The software only provides general information and does not provide personalized clinical advice, which means it is unlikely to be classed as a medical device.
+                    In Summary: The software only provides general information and does not provide personalised clinical advice, which means it is unlikely to be classed as a medical device.
                   </p>
                 </div>
               </div>

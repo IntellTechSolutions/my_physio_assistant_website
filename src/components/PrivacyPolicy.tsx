@@ -48,10 +48,10 @@ const PrivacyPolicy: React.FC = () => {
           <div className="border-l-4 border-teal-500 pl-6 py-2 bg-sky-50/50 rounded-r-lg">
             <div className="flex items-start mb-3">
               <Database className="w-6 h-6 text-teal-600 mr-2 mt-1 flex-shrink-0" />
-              <h3 className="text-2xl font-bold text-sky-700">2. Personal Data We Collect (GDPR Minimization)</h3>
+              <h3 className="text-2xl font-bold text-sky-700">2. Personal Data We Collect (GDPR Minimisation)</h3>
             </div>
             <p className="text-base mb-4">
-              We adhere strictly to the principle of data minimization, collecting only the data essential to provide and secure the RehabInfo Assistant service.
+              We adhere strictly to the principle of data minimisation, collecting only the data essential to provide and secure the RehabInfo Assistant service.
             </p>
 
             <div className="space-y-4">
@@ -91,7 +91,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
             <p className="text-base mb-3">We process your data under the following lawful bases:</p>
             <ul className="list-disc list-inside space-y-2 ml-4 text-base">
-              <li><strong>Explicit Consent:</strong> For processing health-related special category data and the manual processing of clinical data by Przemyslaw Jaczun (Director & Principal Clinician) or authorized clinical staff.</li>
+              <li><strong>Explicit Consent:</strong> For processing health-related special category data and the manual processing of clinical data by Przemyslaw Jaczun (Director & Principal Clinician) or authorised clinical staff.</li>
               <li><strong>Legitimate Interests:</strong> For providing safe, factual rehabilitation information (public health interest) and monitoring system security.</li>
               <li><strong>Legal Obligation:</strong> For maintaining audit logs to meet UK MHRA safety and compliance requirements.</li>
             </ul>
@@ -104,9 +104,9 @@ const PrivacyPolicy: React.FC = () => {
               <h3 className="text-2xl font-bold text-sky-700">4. Data Sharing and Transfer</h3>
             </div>
             <ul className="list-disc list-inside space-y-2 ml-4 text-base">
-              <li><strong>Service Providers:</strong> We utilize third-party services for essential functions, including Supabase (Database/Auth) and Railway (Hosting). These providers are bound by strict data protection agreements.</li>
+              <li><strong>Service Providers:</strong> We utilise third-party services for essential functions, including Supabase (Database/Auth) and Railway (Hosting). These providers are bound by strict data protection agreements.</li>
               <li><strong>Data Residency:</strong> All patient-specific data is hosted within the EU (Supabase Frankfurt region) to ensure GDPR compliance.</li>
-              <li><strong>Anonymous Analytics:</strong> Aggregated, anonymized conversation and usage data may be used to improve service quality and retrieval accuracy.</li>
+              <li><strong>Anonymous Analytics:</strong> Aggregated, anonymised conversation and usage data may be used to improve service quality and retrieval accuracy.</li>
             </ul>
           </div>
 
