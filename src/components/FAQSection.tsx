@@ -175,6 +175,31 @@ const FAQSection: React.FC = () => {
         </div>
       </div>
 
+      {/* --- Additional Feature Cards --- */}
+      <div className="mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Tailored Access Card */}
+          <GlassPanel className="text-left">
+            <h3 className="text-2xl font-bold text-teal-600 mb-4">
+              Tailored Access for Maximum Benefit
+            </h3>
+            <p className="text-slate-700 text-base leading-relaxed">
+              The system intelligently adapts to the user's role. Patients access a curated, safety-first version of the database specifically designed to improve rehabilitation adherence. Crucially, it acts as a triage tool: detecting symptoms that require your professional attention (prompting the patient to book an appointment) versus "red flags" that demand immediate emergency care. In contrast, clinicians (or independent subscribers) unlock the complete, unrestricted database, granting the freedom to query the full breadth of musculoskeletal medicine—from pathophysiology to complex case management—without limitations.
+            </p>
+          </GlassPanel>
+
+          {/* Condition-Centred Card */}
+          <GlassPanel className="text-left">
+            <h3 className="text-2xl font-bold text-teal-600 mb-4">
+              Condition-Centred & Goal-Oriented
+            </h3>
+            <p className="text-slate-700 text-base leading-relaxed">
+              This is not a generic chatbot; it is precision-engineered around the patient's specific condition. By integrating your clinical inputs—such as the diagnosis and specific session notes—the Assistant "grounds" every answer in the reality of your treatment plan. This ensures the patient receives information strictly related to their problem without going off-topic, preventing confusion and maximising their recovery through focused, relevant guidance. Effectively, it acts as a seamless extension of your clinical voice, reinforcing your specific instructions even when you are not there. Adopting this technology positions your practice at the forefront of modern healthcare, offering a premium, 24/7 support service that truly sets you apart.
+            </p>
+          </GlassPanel>
+        </div>
+      </div>
+
       {/* --- Patient FAQ Section --- */}
       <div className="max-w-4xl mx-auto">
         <h2 id="faq" className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
