@@ -169,7 +169,7 @@ const FAQSection: React.FC = () => {
               Why provide patients with RehabInfo Assistant access?
             </h3>
             <p className="text-slate-700 text-base leading-relaxed">
-              Patients frequently have questions after their clinical sessions conclude. Insufficient information can lead to poor rehabilitation compliance, while delayed answers may cause anxiety or stall recovery progress. The RehabInfo Assistant bridges this gap by providing immediate, clinically verified answers, ensuring patients remain compliant with their recovery plans while reducing the administrative burden on clinical staff.
+              Patients frequently have questions following their clinical sessions with Physiotherapists. Insufficient information can lead to poor adherence, while delayed answers may cause anxiety or stall recovery progress, not something that either patient or Physiotherapist hopes for. The RehabInfo Assistant bridges this gap by providing immediate answers verified against trusted guidelines. This ensures patients remain compliant and safe between visits, whilst significantly reducing the administrative burden of repetitive inquiries on your clinical staff.
             </p>
           </GlassPanel>
         </div>
