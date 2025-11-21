@@ -2,6 +2,7 @@ import { ChevronDown, Rocket } from 'lucide-react';
 import FAQSection from './components/FAQSection';
 import ChatDemo from './components/ChatDemo';
 import ContactForm from './components/ContactForm';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import Footer from './components/Footer';
 
 function App() {
@@ -71,6 +72,9 @@ function App() {
 
         {/* --- Contact Form --- */}
         <ContactForm />
+
+        {/* --- Privacy Policy --- */}
+        <PrivacyPolicy />
 
         {/* --- Footer --- */}
         <Footer />

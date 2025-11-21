@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
               © {currentYear} Intelligent Technology Solutions Limited (UK) | Operating RehabInfo Assistant
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-slate-500 hover:text-teal-600 transition">
+              <a href="#privacy-policy" className="text-slate-500 hover:text-teal-600 transition">
                 Privacy Policy
               </a>
               <a href="#" className="text-slate-500 hover:text-teal-600 transition">
