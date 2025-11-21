@@ -159,7 +159,7 @@ const FAQSection: React.FC = () => {
               Can it be used by clinicians?
             </h3>
             <p className="text-slate-700 text-base leading-relaxed">
-              Yes. Built by a clinician for clinicians, a dedicated login (purchased separately) unlocks the full, unrestricted database for complex queries like pathophysiology or pharmacology. Stop wasting time verifying unreliable internet sources; instead, get instant, evidence-based answers to support your clinical reasoning and manage your patients with confidence.
+              Yes. Built by a clinician for clinicians, a specialised login unlocks the full, unrestricted database for complex queries like pathophysiology or pharmacology. Stop wasting time verifying unreliable internet sources; instead, get instant, evidence-based answers to support your clinical reasoning. By integrating this into your practice, you extend your care beyond the appointment with a system that strictly adheres to NHS and NICE standards. Plus, the automated red flag detection adds a critical safety net, ensuring your patients are directed to emergency care if concerning symptoms arise.
             </p>
           </GlassPanel>
 
