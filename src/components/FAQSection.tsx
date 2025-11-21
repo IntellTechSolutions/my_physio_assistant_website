@@ -36,7 +36,7 @@ const FAQSection: React.FC = () => {
     },
     {
       q: "Is my data private and secure?",
-      a: "Yes. We do not store personal health information. Queries are educational only and logged anonymously for safety monitoring. Phase 5 will add optional patient accounts with full GDPR compliance.",
+      a: "Yes. We do not store personal health information outside of secure, compliant systems. Queries are educational only and logged anonymously for safety monitoring. Full GDPR compliance measures are strictly enforced.",
       icon: <Lock className="w-5 h-5 mt-1" />
     },
     {
@@ -47,6 +47,11 @@ const FAQSection: React.FC = () => {
     {
       q: "How do I know the information is accurate?",
       a: "All responses cite verified sources (NHS, NICE, BNF, CSP, MHRA) and are clinically reviewed by qualified physiotherapists. Every answer includes source citations.",
+      icon: <CheckCircle className="w-5 h-5 mt-1" />
+    },
+    {
+      q: "How will this benefit my practice workflow?",
+      a: "It significantly reduces the administrative burden of answering repetitive patient queries between sessions. By offering this 24/7 educational support, you enhance patient adherence and satisfaction, effectively extending your duty of care without extending your working hours.",
       icon: <CheckCircle className="w-5 h-5 mt-1" />
     }
   ];
@@ -118,6 +123,9 @@ const FAQSection: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-teal-500 mr-2">✓</span> Includes mandatory disclaimers on every response.
+              </li>
+              <li className="flex items-start">
+                <span className="text-teal-500 mr-2">✓</span> Full Audit Logging for clinical governance and MHRA compliance.
               </li>
             </ul>
           </div>
