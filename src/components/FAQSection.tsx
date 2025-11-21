@@ -133,8 +133,8 @@ const FAQSection: React.FC = () => {
       </GlassPanel>
 
       {/* --- How It Works Section --- */}
-      <div className="text-center mb-16">
-        <h3 className="text-3xl font-bold text-slate-800 mb-8 flex items-center justify-center">
+      <div className="mb-16">
+        <h3 className="text-3xl font-bold text-slate-800 mb-8 flex items-center">
           <Waypoints className="w-8 h-8 mr-3 text-blue-500" />
           How It Works (Simple 3-Step Process)
         </h3>
@@ -151,7 +151,7 @@ const FAQSection: React.FC = () => {
         </div>
 
         {/* Tagline */}
-        <div className="text-center mt-8">
+        <div className="mt-8">
           <p className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
             RehabInfo Assistant - Your Rehabilitation Questions, Answered Instantly
           </p>
