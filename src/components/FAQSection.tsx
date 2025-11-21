@@ -111,16 +111,13 @@ const FAQSection: React.FC = () => {
                 <span className="text-red-500 mr-2">✗</span> Does NOT replace professional medical advice.
               </li>
               <li className="flex items-start">
+                <span className="text-teal-500 mr-2">✓</span> Monitors for Urgency Keywords and immediately redirects to emergency contacts.
+              </li>
+              <li className="flex items-start">
                 <span className="text-teal-500 mr-2">✓</span> Provides educational information only.
               </li>
               <li className="flex items-start">
                 <span className="text-teal-500 mr-2">✓</span> Includes mandatory disclaimers on every response.
-              </li>
-              <li className="flex items-start">
-                <span className="text-teal-500 mr-2">✓</span> Full Audit Logging for clinical governance.
-              </li>
-              <li className="flex items-start">
-                <span className="text-teal-500 mr-2">✓</span> Automatic Red Flag Detection escalates urgent symptoms.
               </li>
             </ul>
           </div>
