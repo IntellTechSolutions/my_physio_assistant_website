@@ -17,9 +17,16 @@ function App() {
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* --- Main Content Container (Hero Section) --- */}
         <div className="container mx-auto p-4 max-w-7xl flex flex-col justify-center items-center text-center">
-          <header className="mb-8 mt-12 md:mt-0">
+          <header className="mb-8 mt-12 md:mt-16">
+            {/* Promotional Banner */}
+            <div className="mb-6 px-6 py-3 bg-gradient-to-r from-teal-50 to-blue-50 border border-teal-200 rounded-full inline-block">
+              <p className="text-sm md:text-base text-teal-700 font-semibold">
+                Promotional Website for RehabInfo Assistant
+              </p>
+            </div>
+
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
-              Your Rehabilitation Questions, Answered Instantly
+              RehabInfo Assistant
             </h1>
             <p className="mt-4 text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto">
               AI-powered information assistant providing post-consultation support for physiotherapy patients.

@@ -120,7 +120,7 @@ const FAQSection: React.FC = () => {
                 <span className="text-teal-500 mr-2">✓</span> Full Audit Logging for clinical governance.
               </li>
               <li className="flex items-start">
-                <span className="text-teal-500 mr-2">✓</span> Automatic Red Flag Detection escalates urgent symptoms (999/111).
+                <span className="text-teal-500 mr-2">✓</span> Automatic Red Flag Detection escalates urgent symptoms.
               </li>
             </ul>
           </div>
@@ -143,6 +143,31 @@ const FAQSection: React.FC = () => {
               <p className="text-slate-600">{item.description}</p>
             </GlassPanel>
           ))}
+        </div>
+      </div>
+
+      {/* --- For Clinicians & Patients Section --- */}
+      <div className="mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Clinicians Section */}
+          <GlassPanel className="text-left">
+            <h3 className="text-2xl font-bold text-teal-600 mb-4">
+              Can it be used by clinicians?
+            </h3>
+            <p className="text-slate-700 text-base leading-relaxed">
+              Yes, you can obtain a clinician login to access all the databases and you would be free to ask any question about Musculoskeletal medicine (e.g. pathophysiology, pharmacology, image interpretation etc.) that would allow you to manage your patient better.
+            </p>
+          </GlassPanel>
+
+          {/* Patient Benefits Section */}
+          <GlassPanel className="text-left">
+            <h3 className="text-2xl font-bold text-teal-600 mb-4">
+              Why provide patients with RehabInfo Assistant access?
+            </h3>
+            <p className="text-slate-700 text-base leading-relaxed">
+              Patients have questions after leaving your session. Some would not know about the rehab process if having insufficient information affecting rehab compliance. Others would keep waiting to ask questions till next appointment, and some ask you in the meantime. Anyway, this can affect rehab compliance or put a burden on you yourself.
+            </p>
+          </GlassPanel>
         </div>
       </div>
 
