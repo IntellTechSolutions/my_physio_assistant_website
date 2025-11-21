@@ -60,17 +60,17 @@ const FAQSection: React.FC = () => {
     {
       step: 1,
       title: "Ask Your Question",
-      description: "Type your rehabilitation query in plain English—no medical jargon needed."
+      description: "Simply type your query in plain English—no medical jargon required. Whether it involves exercise technique, medication, or recovery timelines, or anything on your mind."
     },
     {
       step: 2,
-      title: "AI Retrieves Verified Information",
-      description: "Our system searches 500+ clinically verified documents to find the most relevant guidance."
+      title: "Intelligent Retrieval",
+      description: "Our system instantly scans hundreds of verified clinical resources and your specific session notes to identify the exact guidance relevant to your condition."
     },
     {
       step: 3,
-      title: "Receive Evidence-Based Answer",
-      description: "Get a clear, helpful response with sources cited (NHS, NICE, BNF, etc.) and a safety disclaimer."
+      title: "Receive Evidence-Based Answers",
+      description: "Get a clear, helpful response strictly grounded in trusted standards (NHS, NICE, BNF), complete with source citations and mandatory safety checks."
     },
   ];
 
