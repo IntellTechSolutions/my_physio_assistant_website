@@ -159,7 +159,7 @@ const FAQSection: React.FC = () => {
               Can it be used by clinicians?
             </h3>
             <p className="text-slate-700 text-base leading-relaxed">
-              Yes, you can obtain a clinician login to access the full, unrestricted database. You can query complex topics—like pathophysiology, pharmacology, or image interpretation—to support your clinical reasoning. This acts as an instant reference tool, saving you research time and helping you manage your patient better. It is also built by a clinician for clinicians.
+              Yes. Built by a clinician for clinicians, a dedicated login (purchased separately) unlocks the full, unrestricted database for complex queries like pathophysiology or pharmacology. Stop wasting time verifying unreliable internet sources; instead, get instant, evidence-based answers to support your clinical reasoning and manage your patients with confidence.
             </p>
           </GlassPanel>
 
