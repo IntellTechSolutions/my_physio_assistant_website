@@ -4,6 +4,7 @@ import ChatDemo from './components/ChatDemo';
 import ContactForm from './components/ContactForm';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import MHRACompliance from './components/MHRACompliance';
 import Footer from './components/Footer';
 
 function App() {
@@ -79,6 +80,9 @@ function App() {
 
         {/* --- Terms of Service --- */}
         <TermsOfService />
+
+        {/* --- MHRA Compliance --- */}
+        <MHRACompliance />
 
         {/* --- Footer --- */}
         <Footer />

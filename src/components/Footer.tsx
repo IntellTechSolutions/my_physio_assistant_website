@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
               <a href="#terms-of-service" className="text-slate-500 hover:text-teal-600 transition">
                 Terms of Service
               </a>
-              <a href="#" className="text-slate-500 hover:text-teal-600 transition">
+              <a href="#mhra-compliance" className="text-slate-500 hover:text-teal-600 transition">
                 MHRA Compliance
               </a>
             </div>
