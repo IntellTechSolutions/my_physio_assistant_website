@@ -298,7 +298,7 @@ const FAQSection: React.FC = () => {
       {/* --- For Clinics & Physiotherapists Section --- */}
       <section id="for-physiotherapists" className="mt-32 -mx-4 py-20 md:py-32 bg-gradient-to-br from-slate-50 to-sky-50 border-y border-sky-200">
         <div className="container mx-auto max-w-7xl px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-slate-800">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-6" style={{ color: '#909090' }}>
             For Clinics & Physiotherapists
           </h2>
 

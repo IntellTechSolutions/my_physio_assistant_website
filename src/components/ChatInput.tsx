@@ -35,6 +35,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
       <button
         type="submit"
         disabled={disabled || !input.trim()}
+        aria-label="Send message"
         className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-teal-500 hover:bg-teal-400 disabled:bg-slate-300 disabled:cursor-not-allowed flex items-center justify-center transition duration-200 shadow-md"
       >
         <Send className="w-4 h-4 text-white" />

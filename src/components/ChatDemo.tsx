@@ -138,6 +138,7 @@ const ChatDemo: React.FC = () => {
               <button
                 onClick={() => handleSendMessage("I've got lower back pain; physio said 'it's muscular' - what does that mean?")}
                 disabled={isTyping}
+                aria-label="Ask about muscular lower back pain"
                 className="text-left text-sm px-4 py-2 bg-white/80 hover:bg-white border border-sky-200 rounded-full text-slate-700 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
               >
                 I've got lower back pain; physio said 'it's muscular' - what does that mean?
@@ -145,6 +146,7 @@ const ChatDemo: React.FC = () => {
               <button
                 onClick={() => handleSendMessage("My MRI says 'degenerative changes' in my neck. Should I be worried?")}
                 disabled={isTyping}
+                aria-label="Ask about degenerative changes in neck MRI"
                 className="text-left text-sm px-4 py-2 bg-white/80 hover:bg-white border border-sky-200 rounded-full text-slate-700 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
               >
                 My MRI says 'degenerative changes' in my neck. Should I be worried?
@@ -152,6 +154,7 @@ const ChatDemo: React.FC = () => {
               <button
                 onClick={() => handleSendMessage("I have knee pain and do manual work. What's usually safe for me?")}
                 disabled={isTyping}
+                aria-label="Ask about knee pain safety with manual work"
                 className="text-left text-sm px-4 py-2 bg-white/80 hover:bg-white border border-sky-200 rounded-full text-slate-700 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
               >
                 I have knee pain and do manual work. What's usually safe for me?

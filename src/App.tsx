@@ -48,12 +48,14 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 mb-4">
             <a
               href="#demo"
+              aria-label="Start Your Chat"
               className="flex items-center justify-center px-10 py-4 bg-teal-500 hover:bg-teal-400 text-white text-lg font-bold rounded-full transition duration-300 shadow-lg shadow-teal-500/40 hover:shadow-teal-500/60"
             >
               <MessageCircle className="w-5 h-5 mr-2" /> Start Your Chat
             </a>
             <a
               href="#how-it-works"
+              aria-label="See How It Works"
               className="flex items-center justify-center px-8 py-4 bg-white/60 hover:bg-white/80 text-sky-700 text-base font-semibold rounded-full transition duration-300 shadow-sm border border-sky-200/60 hover:border-sky-300"
             >
               See How It Works <ChevronDown className="w-4 h-4 ml-2" />
