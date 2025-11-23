@@ -48,7 +48,7 @@ function App() {
               href="#demo"
               className="flex items-center justify-center px-10 py-4 bg-teal-500 hover:bg-teal-400 text-white text-lg font-bold rounded-full transition duration-300 shadow-lg shadow-teal-500/40 hover:shadow-teal-500/60"
             >
-              <Rocket className="w-5 h-5 mr-2" /> Try Demo
+              <Rocket className="w-5 h-5 mr-2" /> Ask Your Question Now
             </a>
             <a
               href="#for-physiotherapists"

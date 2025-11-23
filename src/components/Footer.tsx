@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li>
                 <a href="#demo" className="text-slate-600 hover:text-teal-600 text-sm transition">
-                  Try Demo
+                  Ask a Question
                 </a>
               </li>
               <li>
