@@ -41,7 +41,7 @@ const FAQSection: React.FC = () => {
     },
     {
       q: "What if I have an emergency symptom?",
-      a: "Our system detects red flag symptoms (e.g., severe pain, numbness, bladder issues) and immediately advises you to call 999 or visit A&E. Never delay emergency care.",
+      a: "RehabInfo Assistant detects red flag symptoms (e.g., severe pain, numbness, bladder issues) and immediately advises you to call 999 or visit A&E. Never delay emergency care.",
       icon: <AlertTriangle className="w-5 h-5 mt-1 text-red-500" />
     },
     {
@@ -304,6 +304,19 @@ const FAQSection: React.FC = () => {
                 Stop wasting time verifying unreliable internet sources. Get instant, evidence-based answers to support your clinical reasoning, all while extending your care beyond the appointment with automated red flag detection as a critical safety net.
               </p>
             </div>
+          </div>
+
+          {/* Professional CTA */}
+          <div className="mt-12 text-center">
+            <a
+              href="#contact"
+              className="inline-flex items-center px-10 py-4 bg-teal-600 hover:bg-teal-500 text-white text-lg font-bold rounded-full transition duration-300 shadow-lg hover:shadow-xl"
+            >
+              Get in Touch
+            </a>
+            <p className="mt-4 text-sm text-slate-600">
+              Interested in bringing RehabInfo Assistant to your clinic? Contact us to learn more.
+            </p>
           </div>
         </div>
       </section>
