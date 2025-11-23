@@ -6,7 +6,7 @@ const ChatDemo: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessageProps[]>([
     {
       role: 'assistant',
-      content: "Hello! I'm the RehabInfo Assistant. I can help answer questions about your physiotherapy and rehabilitation. What would you like to know?",
+      content: "Hi, I'm RehabInfo Assistant 👋 Lots of people leave physio or GP appointments still unsure what's happening. Tell me what hurts, what you were told (from what you remember), and what you're worried about. I'll explain things clearly and let you know what's usually safe—and when to seek more help.",
       timestamp: 'Just now'
     }
   ]);
@@ -129,6 +129,36 @@ const ChatDemo: React.FC = () => {
       {/* Input Area */}
       <div className="px-6 py-4 border-t border-sky-100 bg-gradient-to-r from-sky-50 to-blue-50">
         <ChatInput onSendMessage={handleSendMessage} disabled={isTyping} />
+
+        {/* Suggestion Chips */}
+        {messages.length === 1 && (
+          <div className="mt-4">
+            <p className="text-xs text-slate-600 mb-2 text-center">Not sure where to begin?</p>
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={() => handleSendMessage("I've got lower back pain; physio said 'it's muscular' - what does that mean?")}
+                disabled={isTyping}
+                className="text-left text-sm px-4 py-2 bg-white/80 hover:bg-white border border-sky-200 rounded-full text-slate-700 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              >
+                I've got lower back pain; physio said 'it's muscular' - what does that mean?
+              </button>
+              <button
+                onClick={() => handleSendMessage("My MRI says 'degenerative changes' in my neck. Should I be worried?")}
+                disabled={isTyping}
+                className="text-left text-sm px-4 py-2 bg-white/80 hover:bg-white border border-sky-200 rounded-full text-slate-700 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              >
+                My MRI says 'degenerative changes' in my neck. Should I be worried?
+              </button>
+              <button
+                onClick={() => handleSendMessage("I have knee pain and do manual work. What's usually safe for me?")}
+                disabled={isTyping}
+                className="text-left text-sm px-4 py-2 bg-white/80 hover:bg-white border border-sky-200 rounded-full text-slate-700 transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              >
+                I have knee pain and do manual work. What's usually safe for me?
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

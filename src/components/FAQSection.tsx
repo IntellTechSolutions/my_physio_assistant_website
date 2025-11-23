@@ -75,13 +75,18 @@ const FAQSection: React.FC = () => {
         About RehabInfo Assistant
       </h2>
 
+      {/* --- Validation Strip --- */}
+      <div className="mb-12 py-8 px-6 max-w-4xl mx-auto text-center bg-gradient-to-r from-sky-50 to-teal-50 rounded-2xl border border-sky-200">
+        <p className="text-slate-700 text-lg md:text-xl leading-relaxed mb-3">
+          It's normal to feel worried, confused, or even dismissed after a short appointment.
+        </p>
+        <p className="text-slate-700 text-lg md:text-xl leading-relaxed font-medium">
+          Your questions are valid, and it's okay to want more explanation.
+        </p>
+      </div>
+
       {/* --- The Appointment Ended Value Proposition --- */}
       <div className="mb-16">
-        {/* Bridging sentence */}
-        <p className="text-center text-slate-600 text-base mb-8 max-w-2xl mx-auto leading-relaxed">
-          It's completely normal to have these questions, but it can be hard to get answers when you're at home on your own. That's where we step in.
-        </p>
-
         <GlassPanel className="max-w-5xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-8">
             The Appointment Ended, But Your Questions Didn't.
@@ -152,7 +157,7 @@ const FAQSection: React.FC = () => {
       </div>
 
       {/* --- How It Works Section --- */}
-      <div className="mb-16">
+      <div id="how-it-works" className="mb-16">
         <h3 className="text-3xl font-bold text-slate-800 mb-8 flex items-center">
           <Waypoints className="w-8 h-8 mr-3 text-blue-500" />
           How It Works (Simple 3-Step Process)

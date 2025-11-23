@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ChevronDown, Rocket } from 'lucide-react';
+import { ChevronDown, MessageCircle, CheckCircle, FileText, Shield, MessageSquare, AlertCircle } from 'lucide-react';
 import FAQSection from './components/FAQSection';
 import ChatDemo from './components/ChatDemo';
 import ContactForm from './components/ContactForm';
@@ -28,12 +28,14 @@ function App() {
         {/* --- Main Content Container (Hero Section) --- */}
         <div className="container mx-auto p-4 max-w-7xl flex flex-col justify-center items-center text-center">
           <header className="mb-12 mt-12 md:mt-16">
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-6">
-              Your Personal Recovery Guide.
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-6">
+              Still Confused After Your Physio or GP Visit?
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-slate-700 max-w-4xl mx-auto leading-relaxed">
-              Trusted, instant answers to your rehab questions between appointments.<br className="hidden sm:inline" />
-              Keeping you safe, supported, and on track.
+              You left with more questions than answers. RehabInfo Assistant is here to fill the gaps and calm the worries.
+            </p>
+            <p className="mt-4 text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed italic">
+              If you walked out thinking "I'm not even sure what's really wrong or what to do next," you're not alone.
             </p>
           </header>
 
@@ -48,92 +50,123 @@ function App() {
               href="#demo"
               className="flex items-center justify-center px-10 py-4 bg-teal-500 hover:bg-teal-400 text-white text-lg font-bold rounded-full transition duration-300 shadow-lg shadow-teal-500/40 hover:shadow-teal-500/60"
             >
-              <Rocket className="w-5 h-5 mr-2" /> Ask Your Question Now
+              <MessageCircle className="w-5 h-5 mr-2" /> Start Your Chat
             </a>
             <a
-              href="#for-physiotherapists"
+              href="#how-it-works"
               className="flex items-center justify-center px-8 py-4 bg-white/60 hover:bg-white/80 text-sky-700 text-base font-semibold rounded-full transition duration-300 shadow-sm border border-sky-200/60 hover:border-sky-300"
             >
-              For Physiotherapists <ChevronDown className="w-4 h-4 ml-2" />
+              See How It Works <ChevronDown className="w-4 h-4 ml-2" />
             </a>
           </div>
 
           {/* --- Reassurance Disclaimer --- */}
-          <div className="text-sm text-slate-600 max-w-3xl mx-auto mb-20 mt-3 leading-relaxed">
+          <div className="text-sm text-slate-600 max-w-3xl mx-auto mb-12 mt-3 leading-relaxed">
             <p>
               RehabInfo Assistant helps you understand your condition, your rehab, and your day-to-day questions. It doesn't replace a physiotherapist, GP, or emergency care. If your symptoms are severe, suddenly worse, or worrying, we'll always guide you to contact the right healthcare service (such as your physio, GP, NHS 111, or emergency services).
             </p>
           </div>
         </div>
 
-        {/* --- Am I Making It Worse Section --- */}
-        <section className="container mx-auto max-w-5xl px-4 py-16 md:py-20">
+        {/* --- Is This For Me? Mini-Section --- */}
+        <section className="container mx-auto max-w-4xl px-4 py-12 mb-8">
           <div
-            className="p-8 md:p-12 rounded-3xl border backdrop-blur-xl"
+            className="p-8 md:p-10 rounded-3xl border backdrop-blur-xl"
             style={{
-              background: 'linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(240,246,255,0.55) 100%)',
-              borderColor: 'rgba(180,200,230,0.25)',
-              boxShadow: '0 8px 24px rgba(30,60,90,0.08)'
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(240,250,255,0.6) 100%)',
+              borderColor: 'rgba(180,200,230,0.3)',
+              boxShadow: '0 8px 24px rgba(30,60,90,0.1)'
             }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-6">
-              Am I Making It Worse?
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-slate-800 mb-8">
+              Is RehabInfo Assistant Right for You?
             </h2>
 
-            <p className="text-slate-700 text-lg leading-relaxed mb-8 text-center max-w-3xl mx-auto">
-              Recovery isn't just about doing your exercises — it's about feeling safe to live your life. Many people worry that everyday activities, work, or family responsibilities might "damage" something or set them back. RehabInfo Assistant is here to help you navigate those decisions with confidence.
-            </p>
+            <ul className="space-y-4 max-w-3xl mx-auto">
+              <li className="flex items-start text-slate-700 text-base md:text-lg leading-relaxed">
+                <CheckCircle className="w-6 h-6 mr-3 mt-1 text-teal-500 flex-shrink-0" />
+                <span>You left your appointment still unsure what your diagnosis actually means.</span>
+              </li>
+              <li className="flex items-start text-slate-700 text-base md:text-lg leading-relaxed">
+                <CheckCircle className="w-6 h-6 mr-3 mt-1 text-teal-500 flex-shrink-0" />
+                <span>You're worried about making things worse at work or home.</span>
+              </li>
+              <li className="flex items-start text-slate-700 text-base md:text-lg leading-relaxed">
+                <CheckCircle className="w-6 h-6 mr-3 mt-1 text-teal-500 flex-shrink-0" />
+                <span>You've had a scan or letter with scary words you don't fully understand.</span>
+              </li>
+              <li className="flex items-start text-slate-700 text-base md:text-lg leading-relaxed">
+                <CheckCircle className="w-6 h-6 mr-3 mt-1 text-teal-500 flex-shrink-0" />
+                <span>You're not sure which symptoms are "normal" and which are red flags.</span>
+              </li>
+              <li className="flex items-start text-slate-700 text-base md:text-lg leading-relaxed">
+                <CheckCircle className="w-6 h-6 mr-3 mt-1 text-teal-500 flex-shrink-0" />
+                <span>You want plain-English answers without feeling rushed.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              {/* Daily Living */}
-              <div className="text-left">
-                <h3 className="text-lg font-bold text-teal-600 mb-4">Daily Living</h3>
-                <ul className="space-y-3 text-slate-700 text-sm">
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
-                    <span>"Can I drive with this neck pain?"</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
-                    <span>"Is it okay to lift my child with a sore back?"</span>
-                  </li>
-                </ul>
-              </div>
+        {/* --- How It Helps Section --- */}
+        <section className="container mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
+            How It Helps
+          </h2>
 
-              {/* Work & Activity */}
-              <div className="text-left">
-                <h3 className="text-lg font-bold text-teal-600 mb-4">Work & Activity</h3>
-                <ul className="space-y-3 text-slate-700 text-sm">
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
-                    <span>"Is it safe to sit at my desk for 8 hours?"</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
-                    <span>"Can I go back to my manual job without making it worse?"</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Symptom Checking */}
-              <div className="text-left">
-                <h3 className="text-lg font-bold text-teal-600 mb-4">Symptom Checking</h3>
-                <ul className="space-y-3 text-slate-700 text-sm">
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
-                    <span>"I feel a sharp twinge when I bend — is that normal or should I stop?"</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
-                    <span>"My pain is worse in the evening — is that expected or a warning sign?"</span>
-                  </li>
-                </ul>
-              </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Tile 1: Decode Letters & Scans */}
+            <div
+              className="p-6 md:p-8 rounded-2xl border backdrop-blur-xl text-left"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(240,250,255,0.6) 100%)',
+                borderColor: 'rgba(180,200,230,0.3)',
+                boxShadow: '0 4px 16px rgba(30,60,90,0.08)'
+              }}
+            >
+              <FileText className="w-10 h-10 text-teal-600 mb-4" />
+              <h3 className="text-xl font-bold text-slate-800 mb-3">
+                Decode Your Clinic Letters & Scan Reports
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                We translate medical jargon into everyday language so you finally understand what the words mean—without giving new diagnoses.
+              </p>
             </div>
 
-            <p className="text-slate-700 text-base leading-relaxed text-center max-w-3xl mx-auto pt-6 border-t border-sky-100">
-              RehabInfo Assistant helps you understand what's usually safe, what might just be a normal part of healing, and when it's important to slow down or seek more help — so you don't have to be afraid to move.
-            </p>
+            {/* Tile 2: Know What's Safe */}
+            <div
+              className="p-6 md:p-8 rounded-2xl border backdrop-blur-xl text-left"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(240,250,255,0.6) 100%)',
+                borderColor: 'rgba(180,200,230,0.3)',
+                boxShadow: '0 4px 16px rgba(30,60,90,0.08)'
+              }}
+            >
+              <Shield className="w-10 h-10 text-teal-600 mb-4" />
+              <h3 className="text-xl font-bold text-slate-800 mb-3">
+                Know What's Usually Safe—and When It Isn't
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                From lifting at work to playing sport, learn what's commonly okay and when to get more help.
+              </p>
+            </div>
+
+            {/* Tile 3: Ask Anything */}
+            <div
+              className="p-6 md:p-8 rounded-2xl border backdrop-blur-xl text-left"
+              style={{
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(240,250,255,0.6) 100%)',
+                borderColor: 'rgba(180,200,230,0.3)',
+                boxShadow: '0 4px 16px rgba(30,60,90,0.08)'
+              }}
+            >
+              <MessageSquare className="w-10 h-10 text-teal-600 mb-4" />
+              <h3 className="text-xl font-bold text-slate-800 mb-3">
+                Ask Anything, Anytime
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                You don't need perfect notes or medical terms. Just tell us what hurts and what worries you. We'll walk through it step by step.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -151,6 +184,25 @@ function App() {
 
         {/* --- MHRA Compliance --- */}
         <MHRACompliance />
+
+        {/* --- Safety & Limits Block --- */}
+        <section className="container mx-auto max-w-4xl px-4 py-12 mb-8">
+          <div
+            className="p-8 md:p-10 rounded-2xl border text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(255,250,245,0.9) 0%, rgba(254,243,235,0.8) 100%)',
+              borderColor: 'rgba(251,146,60,0.3)',
+              boxShadow: '0 4px 16px rgba(251,146,60,0.1)'
+            }}
+          >
+            <div className="flex justify-center mb-4">
+              <AlertCircle className="w-8 h-8 text-orange-600" />
+            </div>
+            <p className="text-slate-700 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+              RehabInfo Assistant can't see your full medical record and can't diagnose or prescribe. If your question sounds dangerous—like sudden chest pain or loss of bladder control—we'll immediately tell you to phone 111 or 999.
+            </p>
+          </div>
+        </section>
 
         {/* --- Footer --- */}
         <Footer />
