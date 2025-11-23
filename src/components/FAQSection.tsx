@@ -49,11 +49,6 @@ const FAQSection: React.FC = () => {
       a: "All responses cite verified sources (NHS, NICE, BNF, CSP, MHRA) and are clinically reviewed by qualified physiotherapists. Every answer includes source citations.",
       icon: <CheckCircle className="w-5 h-5 mt-1" />
     },
-    {
-      q: "How will this benefit my practice workflow?",
-      a: "It significantly reduces the administrative burden of answering repetitive patient queries between sessions. By offering this 24/7 educational support, you enhance patient adherence and satisfaction, effectively extending your duty of care without extending your working hours.",
-      icon: <CheckCircle className="w-5 h-5 mt-1" />
-    }
   ];
 
   const howItWorksSteps = [
@@ -209,56 +204,6 @@ const FAQSection: React.FC = () => {
         </div>
       </div>
 
-      {/* --- For Clinicians & Patients Section --- */}
-      <div className="mb-16">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Clinicians Section */}
-          <GlassPanel className="text-left">
-            <h3 className="text-2xl font-bold text-teal-600 mb-4">
-              Can it be used by clinicians?
-            </h3>
-            <p className="text-slate-700 text-base leading-relaxed">
-              Yes. Built by a clinician for clinicians, a specialised login unlocks the full, unrestricted database for complex queries not only on management, pathophysiology or pharmacology but also pathways. Stop wasting time verifying unreliable internet sources; instead, get instant, evidence-based answers to support your clinical reasoning. By integrating this into your practice, you extend your care beyond the appointment with a system that strictly adheres to NHS and NICE standards. Plus, the automated red flag detection adds a critical safety net, ensuring your patients safety.
-            </p>
-          </GlassPanel>
-
-          {/* Patient Benefits Section */}
-          <GlassPanel className="text-left">
-            <h3 className="text-2xl font-bold text-teal-600 mb-4">
-              Why provide patients with RehabInfo Assistant access?
-            </h3>
-            <p className="text-slate-700 text-base leading-relaxed">
-              Patients frequently have questions following their clinical sessions with Physiotherapists. Insufficient information can lead to poor adherence, while delayed answers may cause anxiety or stall recovery progress, not something that either patient or Physiotherapist hopes for. The RehabInfo Assistant bridges this gap by providing immediate answers verified against trusted guidelines. This ensures patients remain compliant and safe between visits, whilst significantly reducing the administrative burden of repetitive inquiries on your clinical staff.
-            </p>
-          </GlassPanel>
-        </div>
-      </div>
-
-      {/* --- Additional Feature Cards --- */}
-      <div className="mb-16">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Tailored Access Card */}
-          <GlassPanel className="text-left">
-            <h3 className="text-2xl font-bold text-teal-600 mb-4">
-              Tailored Access for Maximum Benefit
-            </h3>
-            <p className="text-slate-700 text-base leading-relaxed">
-              The system intelligently adapts to the user's role. Patients access a curated, safety-first version of the database specifically designed to improve rehabilitation adherence. Crucially, it acts as a triage tool: detecting symptoms that require your professional attention (prompting the patient to book an appointment) versus "red flags" that demand immediate emergency care. In contrast, clinicians (or independent subscribers) unlock the complete, unrestricted database, granting the freedom to query the full breadth of musculoskeletal medicine—from pathophysiology to complex case management—without limitations.
-            </p>
-          </GlassPanel>
-
-          {/* Condition-Centred Card */}
-          <GlassPanel className="text-left">
-            <h3 className="text-2xl font-bold text-teal-600 mb-4">
-              Condition-Centred & Goal-Oriented
-            </h3>
-            <p className="text-slate-700 text-base leading-relaxed">
-              This is not a generic chatbot; it is precision-engineered around the patient's specific condition. By integrating your clinical inputs—such as the diagnosis and specific session notes—the Assistant "grounds" every answer in the reality of your treatment plan. This ensures the patient receives information strictly related to their problem without going off-topic, preventing confusion and maximising their recovery through focused, relevant guidance. Effectively, it acts as a seamless extension of your clinical voice, reinforcing your specific instructions even when you are not there. Adopting this technology positions your practice at the forefront of modern healthcare, offering a premium, 24/7 support service that truly sets you apart.
-            </p>
-          </GlassPanel>
-        </div>
-      </div>
-
       {/* --- Patient FAQ Section --- */}
       <div className="max-w-4xl mx-auto">
         <h2 id="faq" className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
@@ -275,6 +220,93 @@ const FAQSection: React.FC = () => {
           ))}
         </GlassPanel>
       </div>
+
+      {/* --- For Clinics & Physiotherapists Section --- */}
+      <section id="for-physiotherapists" className="mt-32 -mx-4 py-20 md:py-32 bg-gradient-to-br from-slate-50 to-sky-50 border-y border-sky-200">
+        <div className="container mx-auto max-w-7xl px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-slate-800">
+            For Clinics & Physiotherapists
+          </h2>
+
+          <p className="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-12 leading-relaxed">
+            RehabInfo Assistant extends your care beyond the treatment room. It answers common patient questions, reinforces your advice, and supports self-management — without adding to your admin load.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* Extend Your Care */}
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-sky-200 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-bold text-teal-600 mb-3">Extend Your Care</h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                Support patients 24/7 with consistent explanations of rehab principles and common MSK conditions, so they feel supported between sessions.
+              </p>
+            </div>
+
+            {/* Clinical Control */}
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-sky-200 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-bold text-teal-600 mb-3">Clinical Control</h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                RehabInfo Assistant is built around physiotherapy best practice and trusted guidance (NHS and NICE-aligned MSK information). It's designed to reinforce your messages, not replace your clinical judgement.
+              </p>
+            </div>
+
+            {/* Technical Security */}
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-sky-200 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-bold text-teal-600 mb-3">Technical Security</h3>
+              <ul className="text-slate-700 text-sm space-y-2">
+                <li className="flex items-start">
+                  <span className="text-teal-500 mr-2">•</span>
+                  <span>GDPR-compliant data handling</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-500 mr-2">•</span>
+                  <span>Supabase Row-Level Security</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-500 mr-2">•</span>
+                  <span>Comprehensive audit logging</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-500 mr-2">•</span>
+                  <span>MHRA-aligned safety protocols</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-500 mr-2">•</span>
+                  <span>Encrypted data storage & transmission</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Additional Professional Benefits */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Reduce Admin Burden */}
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-sky-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-teal-600 mb-4">
+                Reduce Administrative Burden
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed mb-4">
+                Patients frequently have questions following their clinical sessions. Insufficient information can lead to poor adherence, while delayed answers may cause anxiety or stall recovery progress.
+              </p>
+              <p className="text-slate-700 text-base leading-relaxed">
+                RehabInfo Assistant bridges this gap by providing immediate answers verified against trusted guidelines. This ensures patients remain compliant and safe between visits, whilst significantly reducing repetitive inquiries on your clinical staff.
+              </p>
+            </div>
+
+            {/* Clinical Integration */}
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-sky-200 shadow-sm">
+              <h3 className="text-2xl font-bold text-teal-600 mb-4">
+                Built by Clinicians, for Clinicians
+              </h3>
+              <p className="text-slate-700 text-base leading-relaxed mb-4">
+                A specialised clinician login unlocks the full database for complex queries on management, pathophysiology, pharmacology, and clinical pathways.
+              </p>
+              <p className="text-slate-700 text-base leading-relaxed">
+                Stop wasting time verifying unreliable internet sources. Get instant, evidence-based answers to support your clinical reasoning, all while extending your care beyond the appointment with automated red flag detection as a critical safety net.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </section>
   );
