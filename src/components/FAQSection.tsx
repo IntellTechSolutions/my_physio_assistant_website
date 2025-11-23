@@ -80,55 +80,106 @@ const FAQSection: React.FC = () => {
         About RehabInfo Assistant
       </h2>
 
-      {/* --- Product Overview & Safety Disclaimer Panel --- */}
+      {/* --- Safe, Secure, & Supportive Section --- */}
       <GlassPanel className="mb-16">
-        <div className="grid md:grid-cols-2 gap-10">
+        <h3 className="text-3xl font-bold text-teal-600 mb-6 text-center flex items-center justify-center">
+          <Shield className="w-8 h-8 mr-3" />
+          Safe, Secure, & Supportive
+        </h3>
+
+        <p className="text-slate-700 text-lg mb-8 text-center max-w-3xl mx-auto leading-relaxed">
+          RehabInfo Assistant is here to support you between appointments, never to replace your physiotherapist. Your safety is our top priority, which is why every answer is grounded in trusted physiotherapy principles and NHS-backed guidance.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-10 mb-10">
+          {/* Safety First */}
           <div className="text-left">
-            <h3 className="text-3xl font-bold text-teal-600 mb-4 flex items-center">
-              <Shield className="w-8 h-8 mr-3" />
-              What We Do (And Don't Do)
-            </h3>
-            <p className="text-slate-700 text-lg mb-4 text-left">
-              RehabInfo Assistant is an intelligent chatbot that provides post-consultation
-              rehabilitation information to physiotherapy patients. Built with Retrieval-Augmented
-              Generation (RAG) technology, it delivers accurate, source-cited answers from verified
-              clinical resources including NHS, NICE, BNF, CSP, and MHRA guidance.
-            </p>
-            <p className="text-slate-700 text-lg text-left">
-              Unlike generic health chatbots, RehabInfo is designed specifically for the UK physiotherapy
-              sector with strict MHRA compliance, ensuring <strong>educational support without crossing into medical advice or diagnosis</strong>.
+            <h4 className="text-xl font-bold text-sky-700 mb-3 flex items-center">
+              <Shield className="w-6 h-6 mr-2 text-teal-600" />
+              Safety First
+            </h4>
+            <p className="text-slate-700 text-base leading-relaxed">
+              RehabInfo Assistant is designed to give safe, sensible information based on physiotherapy and NHS-backed guidance. It can't diagnose new problems or emergencies, and it will always encourage you to seek urgent care, NHS 111, your GP, or your physiotherapist if your symptoms are worrying or severe.
             </p>
           </div>
 
-          <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 text-left">
-            <h4 className="text-xl font-bold text-red-600 mb-3 flex items-center">
-              <AlertTriangle className="w-6 h-6 mr-2 text-red-500" />
-              Safety & Compliance Disclaimer
+          {/* Strictly Private */}
+          <div className="text-left">
+            <h4 className="text-xl font-bold text-sky-700 mb-3 flex items-center">
+              <Lock className="w-6 h-6 mr-2 text-teal-600" />
+              Strictly Private
             </h4>
-            <ul className="list-disc list-inside text-slate-700 space-y-2 text-md ml-4 text-left">
-              <li className="flex items-start text-left">
-                <span className="text-red-500 mr-2">✗</span> Does NOT diagnose medical conditions.
+            <p className="text-slate-700 text-base leading-relaxed">
+              Your health information is treated with care. We use secure, GDPR-compliant systems, and your data is never sold or shared with advertisers.
+            </p>
+          </div>
+        </div>
+
+        {/* What it does / doesn't do */}
+        <div className="grid md:grid-cols-2 gap-8 pt-8 border-t border-sky-100">
+          {/* What it DOES */}
+          <div className="text-left">
+            <h4 className="text-lg font-semibold text-teal-600 mb-4 flex items-center">
+              <CheckCircle className="w-5 h-5 mr-2" />
+              What RehabInfo Assistant Does
+            </h4>
+            <ul className="space-y-3 text-slate-700">
+              <li className="flex items-start">
+                <span className="text-teal-500 mr-2 mt-1">✓</span>
+                <span>Explains rehab principles and common MSK conditions in simple language.</span>
               </li>
-              <li className="flex items-start text-left">
-                <span className="text-red-500 mr-2">✗</span> Does NOT prescribe specific treatments.
+              <li className="flex items-start">
+                <span className="text-teal-500 mr-2 mt-1">✓</span>
+                <span>Helps you remember key advice about activity and exercises.</span>
               </li>
-              <li className="flex items-start text-left">
-                <span className="text-red-500 mr-2">✗</span> Does NOT replace professional medical advice.
+              <li className="flex items-start">
+                <span className="text-teal-500 mr-2 mt-1">✓</span>
+                <span>Encourages safe self-management and realistic expectations.</span>
               </li>
-              <li className="flex items-start text-left">
-                <span className="text-teal-500 mr-2">✓</span> Monitors for Urgency Keywords and immediately redirects to emergency contacts.
-              </li>
-              <li className="flex items-start text-left">
-                <span className="text-teal-500 mr-2">✓</span> Provides educational information only.
-              </li>
-              <li className="flex items-start text-left">
-                <span className="text-teal-500 mr-2">✓</span> Includes mandatory disclaimers on every response.
-              </li>
-              <li className="flex items-start text-left">
-                <span className="text-teal-500 mr-2">✓</span> Full Audit Logging for clinical governance and MHRA compliance.
+              <li className="flex items-start">
+                <span className="text-teal-500 mr-2 mt-1">✓</span>
+                <span>Provides information based on trusted NHS and NICE guidance.</span>
               </li>
             </ul>
           </div>
+
+          {/* What it DOESN'T do */}
+          <div className="text-left">
+            <h4 className="text-lg font-semibold text-slate-600 mb-4 flex items-center">
+              <AlertTriangle className="w-5 h-5 mr-2" />
+              What RehabInfo Assistant Doesn't Do
+            </h4>
+            <ul className="space-y-3 text-slate-700">
+              <li className="flex items-start">
+                <span className="text-slate-400 mr-2 mt-1">•</span>
+                <span>Doesn't diagnose or replace your physiotherapist or doctor.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-slate-400 mr-2 mt-1">•</span>
+                <span>Doesn't make decisions about your treatment plan.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-slate-400 mr-2 mt-1">•</span>
+                <span>Doesn't provide emergency care — in an emergency, call 999 or use urgent care services.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Trust badges */}
+        <div className="mt-8 pt-6 border-t border-sky-100 flex flex-wrap justify-center gap-4 items-center">
+          <span className="px-4 py-2 bg-teal-50 text-teal-700 rounded-full text-sm font-semibold border border-teal-200">
+            NHS-Backed Guidance
+          </span>
+          <span className="px-4 py-2 bg-sky-50 text-sky-700 rounded-full text-sm font-semibold border border-sky-200">
+            NICE Standards
+          </span>
+          <span className="px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold border border-blue-200">
+            GDPR Compliant
+          </span>
+          <span className="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full text-sm font-semibold border border-cyan-200">
+            MHRA Aligned
+          </span>
         </div>
       </GlassPanel>
 
