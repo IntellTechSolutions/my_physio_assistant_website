@@ -29,10 +29,10 @@ function App() {
         <div className="container mx-auto p-4 max-w-7xl flex flex-col justify-center items-center text-center">
           <header className="mb-12 mt-12 md:mt-16">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-6">
-              Still Confused After Your Physio or GP Visit?
+              RehabInfo Assistant
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-slate-700 max-w-4xl mx-auto leading-relaxed">
-              You left with more questions than answers. RehabInfo Assistant is here to fill the gaps and calm the worries.
+              Your Personal Recovery Companion
             </p>
             <p className="mt-4 text-base md:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed italic">
               If you walked out thinking "I'm not even sure what's really wrong or what to do next," you're not alone.
@@ -111,6 +111,12 @@ function App() {
 
         {/* --- How It Helps Section --- */}
         <section className="container mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-2">
+            RehabInfo Assistant
+          </h2>
+          <p className="text-lg md:text-xl text-center text-slate-600 mb-12">
+            For any post consultation query
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">
             How It Helps
           </h2>

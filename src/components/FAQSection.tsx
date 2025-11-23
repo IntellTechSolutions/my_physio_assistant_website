@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Waypoints, Info, Lock, AlertTriangle, CheckCircle } from 'lucide-react';
+import { Shield, Info, Lock, AlertTriangle, CheckCircle } from 'lucide-react';
 
 // Soft glassmorphism container style
 const GlassPanel: React.FC<{ children: React.ReactNode, className?: string }> = ({ children, className = '' }) => (
@@ -54,39 +54,85 @@ const FAQSection: React.FC = () => {
   const howItWorksSteps = [
     {
       step: 1,
-      title: "Ask Anytime",
-      description: "Type your question in plain English — no medical terms needed. Ask about your exercises, pain levels, or recovery plan."
+      title: "Just Ask RehabInfo Assistant",
+      description: "Describe what you're feeling in your own words—no medical jargon required. Whether you're unsure about an exercise technique, want to discuss the diagnosis given by your healthcare provider, or are wondering about a new ache, just type it exactly as you'd say it."
     },
     {
       step: 2,
-      title: "Get Trusted Answers",
-      description: "RehabInfo Assistant uses physiotherapy principles and trusted sources like NHS and NICE guidance to give you clear, evidence-informed information."
+      title: "It Checks In With You",
+      description: "RehabInfo Assistant listens to you to get it right. Instead of guessing, the Assistant may ask a few gentle follow-up questions to fully understand your history and goals first. This ensures the guidance isn't just generic—it's safe, personalised, and tailored to exactly how you are feeling right now."
     },
     {
       step: 3,
-      title: "Recover with Confidence",
-      description: "Clear up confusion instantly so you can worry less, stay on track with your rehab, and feel more confident between appointments."
+      title: "Recover with Peace of Mind",
+      description: "Get the clarity you need to stop worrying and focus on getting better. We help you stay on track with your rehab and feel completely supported until you recover fully. RehabInfo Assistant—by your side when you need it 24/7."
     },
   ];
 
   return (
     <section id="learn-more" className="py-20 md:py-32 container mx-auto max-w-7xl px-4">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
-        About RehabInfo Assistant
+        RehabInfo Assistant by your side
       </h2>
 
-      {/* --- Validation Strip --- */}
-      <div className="mb-12 py-8 px-6 max-w-4xl mx-auto text-center bg-gradient-to-r from-sky-50 to-teal-50 rounded-2xl border border-sky-200">
-        <p className="text-slate-700 text-lg md:text-xl leading-relaxed mb-3">
-          It's normal to feel worried, confused, or even dismissed after a short appointment.
-        </p>
-        <p className="text-slate-700 text-lg md:text-xl leading-relaxed font-medium">
-          Your questions are valid, and it's okay to want more explanation.
-        </p>
+      {/* --- Card 1: Validation Text --- */}
+      <div className="mb-12">
+        <GlassPanel className="max-w-4xl mx-auto text-center">
+          <p className="text-slate-700 text-base md:text-lg leading-relaxed mb-4 italic">
+            If you walked out thinking "I'm not even sure what's really wrong or what to do next," you're not alone.
+          </p>
+          <p className="text-slate-700 text-lg md:text-xl leading-relaxed mb-3">
+            It's normal to feel worried, confused, or even dismissed after a short appointment.
+          </p>
+          <p className="text-slate-700 text-lg md:text-xl leading-relaxed font-medium">
+            Your questions are valid, and it's okay to want more explanation.
+          </p>
+        </GlassPanel>
+      </div>
+
+      {/* --- Main Section Heading: Make Sense of Your Diagnosis --- */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
+        Make Sense of Your Diagnosis
+      </h2>
+
+      {/* --- Card 2: Medical Terms Content --- */}
+      <div className="mb-16">
+        <GlassPanel className="max-w-5xl mx-auto">
+          <p className="text-slate-700 text-base leading-relaxed mb-6 text-center max-w-3xl mx-auto">
+            Medical terms, clinic letters, and imaging reports can be confusing and sometimes scary to read. RehabInfo Assistant helps translate your diagnosis into plain English:
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
+              <p className="text-slate-700 text-sm leading-relaxed">
+                <strong className="text-teal-600">Understand imaging:</strong> Learn what your MRI or X-ray results usually mean in the context of musculoskeletal problems.
+              </p>
+            </div>
+
+            <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
+              <p className="text-slate-700 text-sm leading-relaxed">
+                <strong className="text-teal-600">Learn the "why":</strong> Understand what structures might be involved and what that means for your recovery.
+              </p>
+            </div>
+
+            <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
+              <p className="text-slate-700 text-sm leading-relaxed">
+                <strong className="text-teal-600">Know what to watch for:</strong> Learn which symptoms are common during healing, and which changes should be reported to your physiotherapist, GP, or NHS 111.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-slate-600 text-sm text-center italic">
+            We help you decode the language of healthcare so you can feel informed, not overwhelmed.
+          </p>
+        </GlassPanel>
       </div>
 
       {/* --- The Appointment Ended Value Proposition --- */}
       <div className="mb-16">
+        <h3 className="text-xl md:text-2xl font-semibold text-center text-slate-600 mb-4">
+          RehabInfo Assistant is here to fill those gaps
+        </h3>
         <GlassPanel className="max-w-5xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-8">
             The Appointment Ended, But Your Questions Didn't.
@@ -119,47 +165,12 @@ const FAQSection: React.FC = () => {
               </p>
             </div>
           </div>
-
-          {/* Make Sense of Your Diagnosis - Full Width Card */}
-          <div className="mt-10 pt-10 border-t border-sky-100">
-            <h4 className="text-2xl font-bold text-teal-600 mb-4 text-center">
-              Make Sense of Your Diagnosis
-            </h4>
-            <p className="text-slate-700 text-base leading-relaxed mb-6 text-center max-w-3xl mx-auto">
-              Medical terms, clinic letters, and imaging reports can be confusing and sometimes scary to read. RehabInfo Assistant helps translate your diagnosis into plain English:
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-6">
-              <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  <strong className="text-teal-600">Understand imaging:</strong> Learn what your MRI or X-ray results usually mean in the context of musculoskeletal problems.
-                </p>
-              </div>
-
-              <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  <strong className="text-teal-600">Learn the "why":</strong> Understand what structures might be involved and what that means for your recovery.
-                </p>
-              </div>
-
-              <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
-                <p className="text-slate-700 text-sm leading-relaxed">
-                  <strong className="text-teal-600">Know what to watch for:</strong> Learn which symptoms are common during healing, and which changes should be reported to your physiotherapist, GP, or NHS 111.
-                </p>
-              </div>
-            </div>
-
-            <p className="text-slate-600 text-sm text-center italic">
-              We help you decode the language of healthcare so you can feel informed, not overwhelmed.
-            </p>
-          </div>
         </GlassPanel>
       </div>
 
       {/* --- How It Works Section --- */}
       <div id="how-it-works" className="mb-16">
-        <h3 className="text-3xl font-bold text-slate-800 mb-8 flex items-center">
-          <Waypoints className="w-8 h-8 mr-3 text-blue-500" />
+        <h3 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-8">
           How It Works (Simple 3-Step Process)
         </h3>
         <div className="grid md:grid-cols-3 gap-8">
@@ -205,7 +216,7 @@ const FAQSection: React.FC = () => {
               Strictly Private
             </h4>
             <p className="text-slate-700 text-base leading-relaxed">
-              Your health information is treated with care. We use secure, GDPR-compliant systems, and your data is never sold or shared with advertisers.
+              Your health information is treated with care. We use secure, GDPR‑compliant systems, and your data is never sold or shared with advertisers. Every message you send is encrypted and stored safely, so only authorised professionals and systems can access it. You stay in control — you can delete your conversations or account data at any time.
             </p>
           </div>
         </div>
@@ -283,7 +294,7 @@ const FAQSection: React.FC = () => {
         <h2 id="faq" className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
           Frequently Asked Questions (FAQ)
         </h2>
-        <GlassPanel className="!p-4">
+        <GlassPanel className="!p-4 text-left">
           {patientFAQs.map((faq, index) => (
             <FAQItem
               key={index}
@@ -298,6 +309,9 @@ const FAQSection: React.FC = () => {
       {/* --- For Clinics & Physiotherapists Section --- */}
       <section id="for-physiotherapists" className="mt-32 -mx-4 py-20 md:py-32 bg-gradient-to-br from-slate-50 to-sky-50 border-y border-sky-200">
         <div className="container mx-auto max-w-7xl px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-6">
+            RehabInfo Assistant — Your Partner in Patient Support
+          </h2>
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-6" style={{ color: '#909090' }}>
             For Clinics & Physiotherapists
           </h2>
@@ -306,12 +320,20 @@ const FAQSection: React.FC = () => {
             RehabInfo Assistant extends your care beyond the treatment room. It answers common patient questions, reinforces your advice, and supports self-management — without adding to your admin load.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Extend Your Care */}
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-sky-200 shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-bold text-teal-600 mb-3">Extend Your Care</h3>
               <p className="text-slate-700 text-base leading-relaxed">
                 Support patients 24/7 with consistent explanations of rehab principles and common MSK conditions, so they feel supported between sessions.
+              </p>
+            </div>
+
+            {/* You Set the Guardrails */}
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-sky-200 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-bold text-teal-600 mb-3">You Set the Guardrails</h3>
+              <p className="text-slate-700 text-base leading-relaxed">
+                You remain in control. Simply set up a patient profile with their specific diagnosis, management plan, rehab phase, and precautions. The Assistant uses this profile as its rulebook, ensuring every answer it gives the patient is grounded in your clinical reasoning and consistent with your specific instructions.
               </p>
             </div>
 
