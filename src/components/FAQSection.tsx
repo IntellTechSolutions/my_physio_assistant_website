@@ -59,18 +59,18 @@ const FAQSection: React.FC = () => {
   const howItWorksSteps = [
     {
       step: 1,
-      title: "Ask Your Question",
-      description: "Simply type your query in plain English—no medical jargon required. Whether it involves specific exercise techniques, medication details, recovery timelines, or just something on your mind regarding your injury, feel free to ask naturally."
+      title: "Ask Anytime",
+      description: "Type your question in plain English — no medical terms needed. Ask about your exercises, pain levels, or recovery plan."
     },
     {
       step: 2,
-      title: "Intelligent Retrieval",
-      description: "Our system instantly scans hundreds of verified clinical resources alongside your specific session notes to identify the exact guidance relevant to your condition. This ensures that every search provides results that are tailored specifically to your case."
+      title: "Get Trusted Answers",
+      description: "RehabInfo Assistant uses physiotherapy principles and trusted sources like NHS and NICE guidance to give you clear, evidence-informed information."
     },
     {
       step: 3,
-      title: "Receive Evidence-Based Answers",
-      description: "Get a clear, helpful response strictly grounded in trusted standards (NHS, NICE, BNF), complete with source citations and mandatory safety checks."
+      title: "Recover with Confidence",
+      description: "Clear up confusion instantly so you can worry less, stay on track with your rehab, and feel more confident between appointments."
     },
   ];
 
