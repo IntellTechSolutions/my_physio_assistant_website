@@ -66,6 +66,77 @@ function App() {
           </div>
         </div>
 
+        {/* --- Am I Making It Worse Section --- */}
+        <section className="container mx-auto max-w-5xl px-4 py-16 md:py-20">
+          <div
+            className="p-8 md:p-12 rounded-3xl border backdrop-blur-xl"
+            style={{
+              background: 'linear-gradient(135deg, rgba(255,255,255,0.65) 0%, rgba(240,246,255,0.55) 100%)',
+              borderColor: 'rgba(180,200,230,0.25)',
+              boxShadow: '0 8px 24px rgba(30,60,90,0.08)'
+            }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-6">
+              Am I Making It Worse?
+            </h2>
+
+            <p className="text-slate-700 text-lg leading-relaxed mb-8 text-center max-w-3xl mx-auto">
+              Recovery isn't just about doing your exercises — it's about feeling safe to live your life. Many people worry that everyday activities, work, or family responsibilities might "damage" something or set them back. RehabInfo Assistant is here to help you navigate those decisions with confidence.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              {/* Daily Living */}
+              <div className="text-left">
+                <h3 className="text-lg font-bold text-teal-600 mb-4">Daily Living</h3>
+                <ul className="space-y-3 text-slate-700 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>"Can I drive with this neck pain?"</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>"Is it okay to lift my child with a sore back?"</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Work & Activity */}
+              <div className="text-left">
+                <h3 className="text-lg font-bold text-teal-600 mb-4">Work & Activity</h3>
+                <ul className="space-y-3 text-slate-700 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>"Is it safe to sit at my desk for 8 hours?"</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>"Can I go back to my manual job without making it worse?"</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Symptom Checking */}
+              <div className="text-left">
+                <h3 className="text-lg font-bold text-teal-600 mb-4">Symptom Checking</h3>
+                <ul className="space-y-3 text-slate-700 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>"I feel a sharp twinge when I bend — is that normal or should I stop?"</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal-500 mr-2 mt-1 flex-shrink-0">•</span>
+                    <span>"My pain is worse in the evening — is that expected or a warning sign?"</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-slate-700 text-base leading-relaxed text-center max-w-3xl mx-auto pt-6 border-t border-sky-100">
+              RehabInfo Assistant helps you understand what's usually safe, what might just be a normal part of healing, and when it's important to slow down or seek more help — so you don't have to be afraid to move.
+            </p>
+          </div>
+        </section>
+
         {/* --- FAQ/About Section Component --- */}
         <FAQSection />
 
