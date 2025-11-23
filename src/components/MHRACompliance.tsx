@@ -77,8 +77,8 @@ const MHRACompliance: React.FC = () => {
                   The Service deliberately excludes any functionality that would move it into the medical device classification:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4 text-base">
-                  <li><strong>Diagnosis of a disease or injury:</strong> The system uses no diagnostic algorithms, and this functionality is explicitly prohibited by the LLM system prompt.</li>
-                  <li><strong>Assessment of symptoms:</strong> There is no symptom-checker functionality; queries asking for symptom interpretation are immediately blocked and redirected.</li>
+                  <li><strong>Diagnosis of a disease or injury:</strong> The system uses no diagnostic algorithms, and this functionality is explicitly prohibited by the LLM system prompt. The system may explain an existing diagnosis provided in the patient's uploaded clinical notes, but is prohibited from generating new diagnostic hypotheses for undiagnosed symptoms.</li>
+                  <li><strong>Assessment of symptoms:</strong> The system does not perform diagnostic assessment. Queries regarding symptoms are answered with educational safety guidelines (e.g., "Sharp pain is often a sign to stop") or red flag safety checks, rather than a clinical conclusion.</li>
                   <li><strong>Treatment or alleviation of disease:</strong> The system provides no recommendations for treatment, as the LLM is constrained to educational facts and is prohibited from suggesting alternatives.</li>
                   <li><strong>Modification of a physiological process:</strong> There is no function for remote monitoring, calculation of drug doses, or calculation/interpretation of clinical data.</li>
                 </ul>
@@ -115,10 +115,10 @@ const MHRACompliance: React.FC = () => {
 
               {/* B. Auditing and Vigilance */}
               <div>
-                <h4 className="text-lg font-semibold text-slate-800 mb-2">B. Auditing and Vigilance</h4>
+                <h4 className="text-lg font-semibold text-slate-800 mb-2">B. Auditing and Vigilance (Safety Net)</h4>
                 <ul className="list-disc list-inside space-y-2 ml-4 text-base">
                   <li><strong>Audit Logging:</strong> All user interactions, bot responses, documents retrieved, and any triggered urgency flags are recorded in the logs/chatbot_audit.log and stored in the secure Supabase Audit_Log table.</li>
-                  <li><strong>Urgency Detection:</strong> The system specifically monitors for high-risk keywords (e.g., severe pain, numbness, chest pain) and triggers a Tier 2 response, redirecting the user to emergency contacts (NHS 111, 999) before the LLM processes the query.</li>
+                  <li><strong>Urgency Detection (Risk Mitigation):</strong> The system acts as a safety net by monitoring for dangerous symptom keywords (e.g., severe chest pain, sudden loss of bladder control, severe numbness). When detected, the system provides an immediate hard-stop redirection to emergency services (NHS 111, 999) before any LLM processing occurs. This risk-mitigation function prevents delays in seeking urgent medical attention.</li>
                   <li><strong>Clinical Verification:</strong> All documents in the RAG knowledge base (Phase 4.5) are sourced from Tier 1/2 sources (NHS, NICE, etc.) and require explicit clinical verification and sign-off by the Clinical Safety Officer (Przemyslaw Jaczun) before ingestion.</li>
                 </ul>
               </div>
