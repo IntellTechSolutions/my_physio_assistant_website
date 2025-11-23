@@ -40,7 +40,7 @@ const PrivacyPolicy: React.FC = () => {
               <p><strong>Controller:</strong> Intelligent Technology Solutions Limited (UK)</p>
               <p><strong>Registration:</strong> England and Wales, Companies House, Reg. No. 16455045</p>
               <p><strong>Address:</strong> Bartle House, 9 Oxford Court, Manchester, M2 3WQ</p>
-              <p><strong>Service Scope:</strong> The RehabInfo Assistant is designed to provide educational, factual rehabilitation information only. It is not a clinical decision support tool and does not provide medical advice.</p>
+              <p><strong>Service Scope:</strong> The RehabInfo Assistant is designed to provide educational rehabilitation information, symptom context, and post-consultation support. It is not a clinical decision support tool and does not provide medical advice.</p>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ const PrivacyPolicy: React.FC = () => {
               <div>
                 <h4 className="text-lg font-semibold text-slate-800 mb-2">Usage and Safety Data</h4>
                 <ul className="list-disc list-inside space-y-1 ml-4 text-base">
-                  <li><strong>Conversation History:</strong> Patient Query, Bot Response, Documents Retrieved.</li>
+                  <li><strong>Conversation History:</strong> Patient Query (including questions regarding diagnosis, daily activities, and symptom concerns), Bot Response, Documents Retrieved.</li>
                   <li><strong>Safety Data:</strong> Urgency Flag (Boolean) and Urgency Keyword detection.</li>
                   <li><strong>Audit Logging:</strong> All interactions are logged for safety and MHRA compliance.</li>
                 </ul>
