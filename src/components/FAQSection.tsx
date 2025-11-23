@@ -195,13 +195,43 @@ const FAQSection: React.FC = () => {
             </GlassPanel>
           ))}
         </div>
+      </div>
 
-        {/* Tagline */}
-        <div className="mt-8">
-          <p className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
-            RehabInfo Assistant - Your Rehabilitation Questions, Answered Instantly
-          </p>
-        </div>
+      {/* --- The Appointment Ended Value Proposition --- */}
+      <div className="mb-16 mt-20">
+        <GlassPanel className="max-w-5xl mx-auto">
+          <h3 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-8">
+            The Appointment Ended, But Your Questions Didn't.
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* We Have Time for You */}
+            <div className="text-left">
+              <h4 className="text-2xl font-bold text-teal-600 mb-4">
+                We Have Time for You
+              </h4>
+              <p className="text-slate-700 text-base leading-relaxed mb-4">
+                Your physio wants to help, but appointments are short. RehabInfo Assistant is here 24/7 to go deeper — to explain your diagnosis in detail, break down medical terms, and help you understand what's actually going on inside your body at your own pace.
+              </p>
+              <p className="text-slate-700 text-base leading-relaxed">
+                Ask about the words in your letter or scan report, what your physio found on examination, or what your condition might mean for work, family life and hobbies.
+              </p>
+            </div>
+
+            {/* Peace of Mind */}
+            <div className="text-left">
+              <h4 className="text-2xl font-bold text-teal-600 mb-4">
+                Peace of Mind
+              </h4>
+              <p className="text-slate-700 text-base leading-relaxed mb-4">
+                Instead of scrolling through confusing search results, you can talk things through in a calm, supportive space.
+              </p>
+              <p className="text-slate-700 text-base leading-relaxed">
+                Get clear, safe explanations based on physiotherapy principles and trusted guidance, so you know what's likely part of normal healing and what might need checking by a clinician.
+              </p>
+            </div>
+          </div>
+        </GlassPanel>
       </div>
 
       {/* --- Patient FAQ Section --- */}
