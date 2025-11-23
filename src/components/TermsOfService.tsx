@@ -62,7 +62,7 @@ const TermsOfService: React.FC = () => {
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4 text-base">
                   <li><strong>Service Function:</strong> The chatbot provides educational information, pre-approved content retrieval, source citations, and resource links from official sources like the NHS and NICE.</li>
-                  <li><strong>Excluded Functionality:</strong> The Service does not provide diagnosis, treatment recommendations, clinical decision support, symptom assessment, or symptom interpretation.</li>
+                  <li><strong>Excluded Functionality:</strong> The Service does not provide new medical diagnoses, prescriptions, or clinical triage. It provides educational context for your symptoms based on your existing physiotherapy plan, but cannot rule out new or serious conditions.</li>
                 </ul>
               </div>
 
@@ -73,6 +73,7 @@ const TermsOfService: React.FC = () => {
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4 text-base">
                   <li><strong>Always Contact Your Clinician:</strong> You must always consult directly with your physiotherapist or another qualified healthcare professional for any concerns about your symptoms, diagnosis, or treatment.</li>
+                  <li><strong>Medical Term Explanation:</strong> The Service can explain medical terms found in your clinic letters or imaging reports (e.g., MRI results) to help you understand your diagnosis, but this is for educational understanding only and does not replace a doctor's review of your scans.</li>
                   <li><strong>Urgency:</strong> If you detect concerning symptoms (e.g., severe pain, numbness, chest pain), the chatbot is designed to immediately redirect you to emergency contact information (NHS 111, 999) and your physiotherapist. The chatbot cannot assess your symptoms.</li>
                 </ul>
               </div>
@@ -113,9 +114,9 @@ const TermsOfService: React.FC = () => {
                   You agree not to use the Service to ask questions that seek to circumvent the safety controls, including, but not limited to:
                 </p>
                 <ul className="list-disc list-inside space-y-1 ml-4 text-base">
-                  <li>Requests for symptom assessment or interpretation.</li>
+                  <li>Requests for a new diagnosis of an undiagnosed condition (e.g., "What do I have?").</li>
                   <li>Requests for treatment recommendations or changes to medication.</li>
-                  <li>Attempts to elicit a diagnosis or clinical judgement.</li>
+                  <li>Attempts to elicit clinical judgement that replaces your healthcare provider's assessment.</li>
                 </ul>
               </div>
             </div>
