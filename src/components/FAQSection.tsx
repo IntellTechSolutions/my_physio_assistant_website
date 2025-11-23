@@ -31,7 +31,7 @@ const FAQSection: React.FC = () => {
   const patientFAQs = [
     {
       q: "Is this a replacement for my physiotherapist?",
-      a: "No. RehabInfo Assistant is an educational tool to support your recovery between appointments. Always follow your physiotherapist's specific advice and attend scheduled follow-ups.",
+      a: "Not at all. RehabInfo Assistant is an educational support tool to help you between appointments. It works alongside your physiotherapy care, but it's important to always follow your physiotherapist's specific advice and attend your scheduled follow-ups.",
       icon: <Info className="w-5 h-5 mt-1" />
     },
     {
@@ -41,7 +41,7 @@ const FAQSection: React.FC = () => {
     },
     {
       q: "What if I have an emergency symptom?",
-      a: "RehabInfo Assistant detects red flag symptoms (e.g., severe pain, numbness, bladder issues) and immediately advises you to call 999 or visit A&E. Never delay emergency care.",
+      a: "RehabInfo Assistant is designed to spot red flag symptoms (such as severe pain, numbness, bladder changes, or sudden deterioration) and will immediately guide you to call 999 or visit A&E. Your safety comes first — if you're ever worried about severe or sudden symptoms, please don't wait and seek emergency care straight away.",
       icon: <AlertTriangle className="w-5 h-5 mt-1 text-red-500" />
     },
     {
@@ -94,7 +94,7 @@ const FAQSection: React.FC = () => {
               Safety First
             </h4>
             <p className="text-slate-700 text-base leading-relaxed">
-              RehabInfo Assistant is designed to give safe, sensible information based on physiotherapy and NHS-backed guidance. It can't diagnose new problems or emergencies, and it will always encourage you to seek urgent care, NHS 111, your GP, or your physiotherapist if your symptoms are worrying or severe.
+              RehabInfo Assistant is designed to give safe, sensible information based on physiotherapy and NHS-backed guidance. While it's here to support your understanding and confidence, it's not able to diagnose new problems or handle emergencies. If your symptoms are worrying, severe, or suddenly worse, we'll guide you to the right healthcare service — whether that's your physiotherapist, GP, NHS 111, or emergency care.
             </p>
           </div>
 

@@ -59,9 +59,9 @@ function App() {
           </div>
 
           {/* --- Reassurance Disclaimer --- */}
-          <div className="text-sm text-slate-500 max-w-2xl mx-auto mb-20 mt-3">
+          <div className="text-sm text-slate-600 max-w-3xl mx-auto mb-20 mt-3 leading-relaxed">
             <p>
-              RehabInfo Assistant supports your physiotherapy care. It does not replace a physiotherapist or emergency services.
+              RehabInfo Assistant helps you understand your condition, your rehab, and your day-to-day questions. It doesn't replace a physiotherapist, GP, or emergency care. If your symptoms are severe, suddenly worse, or worrying, we'll always guide you to contact the right healthcare service (such as your physio, GP, NHS 111, or emergency services).
             </p>
           </div>
         </div>
