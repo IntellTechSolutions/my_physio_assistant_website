@@ -231,6 +231,40 @@ const FAQSection: React.FC = () => {
               </p>
             </div>
           </div>
+
+          {/* Make Sense of Your Diagnosis - Full Width Card */}
+          <div className="mt-10 pt-10 border-t border-sky-100">
+            <h4 className="text-2xl font-bold text-teal-600 mb-4 text-center">
+              Make Sense of Your Diagnosis
+            </h4>
+            <p className="text-slate-700 text-base leading-relaxed mb-6 text-center max-w-3xl mx-auto">
+              Medical terms, clinic letters, and imaging reports can be confusing and sometimes scary to read. RehabInfo Assistant helps translate your diagnosis into plain English:
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
+                <p className="text-slate-700 text-sm leading-relaxed">
+                  <strong className="text-teal-600">Understand imaging:</strong> Learn what your MRI or X-ray results usually mean in the context of musculoskeletal problems.
+                </p>
+              </div>
+
+              <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
+                <p className="text-slate-700 text-sm leading-relaxed">
+                  <strong className="text-teal-600">Learn the "why":</strong> Understand what structures might be involved and what that means for your recovery.
+                </p>
+              </div>
+
+              <div className="bg-sky-50/50 p-5 rounded-xl border border-sky-100">
+                <p className="text-slate-700 text-sm leading-relaxed">
+                  <strong className="text-teal-600">Know what to watch for:</strong> Learn which symptoms are common during healing, and which changes should be reported to your physiotherapist, GP, or NHS 111.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-slate-600 text-sm text-center italic">
+              We help you decode the language of healthcare so you can feel informed, not overwhelmed.
+            </p>
+          </div>
         </GlassPanel>
       </div>
 
