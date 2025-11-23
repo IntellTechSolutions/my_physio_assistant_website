@@ -55,17 +55,17 @@ const FAQSection: React.FC = () => {
     {
       step: 1,
       title: "Just Ask RehabInfo Assistant",
-      description: "Describe what you're feeling in your own words—no medical jargon required. Whether you're unsure about an exercise technique, want to discuss the diagnosis given by your healthcare provider, or are wondering about a new ache, just type it exactly as you'd say it."
+      description: "Describe what you're feeling in your own words, medical terms needed. Whether you're unsure about an exercise technique, want to discuss the diagnosis given by your healthcare provider, or are wondering about a new ache, just type it exactly as you'd say it, RehabInfo Assistant will listen."
     },
     {
       step: 2,
       title: "It Checks In With You",
-      description: "RehabInfo Assistant listens to you to get it right. Instead of guessing, the Assistant may ask a few gentle follow-up questions to fully understand your history and goals first. This ensures the guidance isn't just generic—it's safe, personalised, and tailored to exactly how you are feeling right now."
+      description: "RehabInfo Assistant listens to get it right. Instead of just guessing, the Assistant may ask a few gentle follow-up questions to fully understand your history and goals first. This ensures the guidance isn't just generic—it's safe, personalised, and tailored to exactly how you are feeling right now."
     },
     {
       step: 3,
       title: "Recover with Peace of Mind",
-      description: "Get the clarity you need to stop worrying and focus on getting better. We help you stay on track with your rehab and feel completely supported until you recover fully. RehabInfo Assistant—by your side when you need it 24/7."
+      description: "Get the clarity you need to stop worrying and focus on getting better. We help you stay on track with your rehab and feel completely supported until you recover fully. RehabInfo Assistant is by your side whenever you need it, it is avaiable for you 24/7."
     },
   ];
 
@@ -158,10 +158,13 @@ const FAQSection: React.FC = () => {
                 Peace of Mind
               </h4>
               <p className="text-slate-700 text-base leading-relaxed mb-4">
-                Instead of scrolling through confusing search results, you can talk things through in a calm, supportive space.
+                Stop scrolling through confusing search results. Instead, talk things through in a calm, supportive space.
+              </p>
+              <p className="text-slate-700 text-base leading-relaxed mb-4">
+                Get clear, safe explanations grounded in trusted clinical guidance, so you know what is likely part of normal healing and what might need checking by a clinician.
               </p>
               <p className="text-slate-700 text-base leading-relaxed">
-                Get clear, safe explanations based on physiotherapy principles and trusted guidance, so you know what's likely part of normal healing and what might need checking by a clinician.
+                We take the uncertainty out of recovery—helping you understand what's happening in your body, validating your questions, and giving you the confidence to know when to seek help.
               </p>
             </div>
           </div>
@@ -306,12 +309,14 @@ const FAQSection: React.FC = () => {
         </GlassPanel>
       </div>
 
+      {/* --- Standalone Section Header --- */}
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600">
+        RehabInfo Assistant — Your Partner in Patient Support
+      </h2>
+
       {/* --- For Clinics & Physiotherapists Section --- */}
-      <section id="for-physiotherapists" className="mt-32 -mx-4 py-20 md:py-32 bg-gradient-to-br from-slate-50 to-sky-50 border-y border-sky-200">
+      <section id="for-physiotherapists" className="-mx-4 py-20 md:py-32 bg-gradient-to-br from-slate-50 to-sky-50 border-y border-sky-200">
         <div className="container mx-auto max-w-7xl px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-6">
-            RehabInfo Assistant — Your Partner in Patient Support
-          </h2>
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-6" style={{ color: '#909090' }}>
             For Clinics & Physiotherapists
           </h2>

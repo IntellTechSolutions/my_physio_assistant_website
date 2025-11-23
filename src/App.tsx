@@ -111,7 +111,7 @@ function App() {
 
         {/* --- How It Helps Section --- */}
         <section className="container mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-2">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-600 mb-2">
             RehabInfo Assistant
           </h2>
           <p className="text-lg md:text-xl text-center text-slate-600 mb-12">
@@ -136,7 +136,7 @@ function App() {
                 Decode Your Clinic Letters & Scan Reports
               </h3>
               <p className="text-slate-700 text-base leading-relaxed">
-                We translate medical jargon into everyday language so you finally understand what the words mean—without giving new diagnoses.
+                We translate medical jargon into everyday language so you finally understand what the words mean.
               </p>
             </div>
 
