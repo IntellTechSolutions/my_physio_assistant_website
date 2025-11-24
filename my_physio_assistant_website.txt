@@ -54,45 +54,40 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
 
   Recent Updates (November 2025):
 
-  ✓ Added promotional banner at top of hero section
-  ✓ Updated hero title to "RehabInfo Assistant"
+  ✓ Hero subtitle: "Your Musculoskeletal Care Companion"
+  ✓ Removed promotional banner
   ✓ Removed (999/111) emergency number references
   ✓ Removed Resources section and social media icons from footer
-  ✓ Added "Can it be used by clinicians?" section
-  ✓ Added "Why provide patients with RehabInfo Assistant access?" section
   ✓ Updated footer copyright to "Intelligent Technology Solutions Limited (UK)"
   ✓ Added "Built by clinicians for patients and clinicians" message
-  ✓ Created comprehensive Privacy Policy component with 7 sections:
-    - Who We Are (Company registration details)
-    - Personal Data Collection (GDPR Minimization)
-    - Lawful Basis for Processing
-    - Data Sharing and Transfer
-    - Data Retention
-    - UK GDPR Rights
-    - Security Measures
-  ✓ Privacy Policy link now active and functional in footer
-  ✓ Created Terms of Service component with 6 sections:
-    - Acceptance of Terms
-    - Critical Health Disclaimer (Non-Medical Device Status)
-    - User Accounts and Access
-    - Content and Usage Restrictions
-    - Liability and Warranties
-    - Governing Law
-  ✓ Terms of Service link now active and functional in footer
-  ✓ Created MHRA Compliance Statement with 5 sections:
-    - Regulatory Status Declaration (Non-Medical Device)
-    - Intended Purpose and Exclusion from Medical Device Definition
-    - Safety and Risk Mitigation Controls
-    - Development and Future Vigilance
-    - Contact for Safety Concerns
-  ✓ MHRA Compliance link now active and functional in footer
+  ✓ Typography fixes: Standardized card font sizes to match "How It Works" cards
+  ✓ Section reordering: Moved "Is RehabInfo Assistant Right for You?" above FAQ
+  ✓ Spacing fixes: Added proper gaps between sections
+
+  ✓ **MODAL IMPLEMENTATION (Latest)**:
+    - Created Modal.tsx component for reusable modal popups
+    - Updated Footer.tsx with modal state management
+    - Converted legal documents to modal popups:
+      • Privacy Policy (7 sections - GDPR compliant)
+      • Terms of Service (6 sections - Legal disclaimers)
+      • MHRA Compliance (5 sections - Non-medical device status)
+    - Removed full-page legal sections from App.tsx
+    - Significantly reduced page length and improved UX
+    - Modal features: ESC to close, click outside to close, prevents body scroll
 
   Legal & Compliance Documents:
 
-  All three compliance documents are now live and accessible from the footer:
+  All three compliance documents are accessible via footer modal popups:
   - Privacy Policy: Full GDPR/UK data protection compliance
   - Terms of Service: Legal terms, disclaimers, and usage restrictions
   - MHRA Compliance: Non-medical device status and safety controls
+
+  Benefits of modal approach:
+  - Cleaner main page (removed ~3 large sections)
+  - Better user experience (access without scrolling through)
+  - Mobile-friendly
+  - Industry-standard pattern for legal documents
+  - Legally compliant (easily accessible)
 
   Project Structure:
 
@@ -103,13 +98,17 @@ https://github.com/IntellTechSolutions/my_physio_assistant_website
   │   ├── ChatMessage.tsx        # Chat message display
   │   ├── ContactForm.tsx        # Contact form (Netlify Forms)
   │   ├── FAQSection.tsx         # FAQ and about section
-  │   ├── PrivacyPolicy.tsx      # Privacy Policy (GDPR compliant)
-  │   ├── TermsOfService.tsx     # Terms of Service (Legal)
-  │   ├── MHRACompliance.tsx     # MHRA Compliance Statement
-  │   └── Footer.tsx             # Footer with links and disclaimer
+  │   ├── Modal.tsx              # Reusable modal component (NEW)
+  │   ├── Footer.tsx             # Footer with modal links (UPDATED)
+  │   ├── PrivacyPolicy.tsx      # Privacy Policy content (standalone)
+  │   ├── TermsOfService.tsx     # Terms of Service content (standalone)
+  │   └── MHRACompliance.tsx     # MHRA Compliance content (standalone)
   ├── App.tsx                    # Main app component
-  ├── index.tsx                  # Entry point
+  ├── main.tsx                   # Entry point
   └── index.css                  # Tailwind CSS styles
+
+  Note: Legal documents (Privacy, Terms, MHRA) are NO LONGER imported in App.tsx.
+  They are embedded directly in Footer.tsx and displayed via Modal.tsx.
 
   Deployment Management:
 
